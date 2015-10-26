@@ -1,0 +1,8 @@
+#export PATH="/home/test/.rvm/gems/ruby-2.1.2@global/bin:/home/test/.rvm/#rubies/ruby-2.1.2/bin:$PATH"
+#export GEM_HOME='/home/test/.rvm/gems/ruby-2.1.2@global'
+#export GEM_PATH='/home/test/.rvm/gems/ruby-2.1.2@global'
+#export MY_RUBY_HOME='/home/test/.rvm/rubies/ruby-2.1.2'
+#export IRBRC='/home/test/.rvm/rubies/ruby-2.1.2/.irbrc'
+#unset MAGLEV_HOME
+#unset RBXOPT
+#export RUBY_VERSION='ruby-2.1.2'

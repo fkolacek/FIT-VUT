@@ -1,0 +1,44 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[left=2cm, text={17cm, 24cm}, top=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage[czech]{babel}
+\usepackage[numbers]{natbib}
+\usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\Huge
+\textsc{Vysoké učení technické v~Brně}        \\
+\huge
+\textsc{Fakulta informačních technologií}     \\
+\vspace{\stretch{0.382}}\
+\LARGE{Typografie a publikování\,-\,4. projekt} \\
+\Huge{Bibliografické citace} 		      \\
+\vspace{\stretch{0.618}}
+\end{center}
+\Large{\today \hfill František Koláček}
+\end{titlepage}
+
+\newpage
+
+\section{Co to je \LaTeX}
+\LaTeX je balík maker programu \TeX jež v~roce 1994 vytvořil Leslie Lamport. \LaTeX je založen na sázecím systému \TeX, který v~roce 1983 vytvořil Donald E. Knuth za účelem zlepšení úrovně typografie a~také eliminace některých chyb při sázení např. matematických vzorců v~jeho skriptech. Nespornou výhodou \LaTeX u je také to, že ho lze používat zadarmo.
+
+\section{Začínáme s \LaTeX em}
+Mnoho lidí shledává začátky práce s~\LaTeX em jako velice složité avšak po překonání prvotních útrap si jej velice rychle oblíbí. Jediné co je třeba pro překonání těchto začátků udělat je čerpat ze správných zdrojů (např. psaná literatura\cite{zaciname:zacatecnici}\cite{zaciname:zacatecnici-en} či internetové zdroje\cite{zaciname:CSTUG}).
+\section{Co \LaTeX dokáže}
+Hlavní výhodou používání \LaTeX pro sázení textu je výsledná kvalita sazby dokumentů, nezávislost na operačním systému, flexibilita použití a~podpora pro různé specializované oblasti jako např. sázení matematických rovnic\cite{Zagorova:mutlimedialni-diskretni-matematika} a odborného textu\cite{Bojko:problematika-sazby-odborneho-textu}.
+
+\section{Kde hledat další informace}
+Informací o~\LaTeX u, \TeX u a~typografii samotné je na internetu nepřeberné množství informací a~zdrojů. Lze také nalézt serialové publikace\cite{zdroje:typografia} a různé články\cite{zdroje:rootcz}\cite{zdroje:abclinuxucz} zabývající se touto tématikou. Po zvládnutí je samozřejmě možné pokračovat dál a~objevovat pokročilé možnosti tohoto nástroje \cite{zdroje:mistru}\cite{zdroje:martinek}.
+
+\newpage
+
+\bibliographystyle{czechiso}
+\def \refname{Použitá literatura}
+\bibliography{proj4}
+
+\end{document}

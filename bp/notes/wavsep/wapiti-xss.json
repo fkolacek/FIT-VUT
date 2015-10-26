@@ -1,0 +1,587 @@
+{
+  "vulnerabilities": {
+    "Cross Site Scripting": [
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case01-Tag2HtmlPageScope.jsp?userinput=%3Cscript%3Ealert%28%27wydyea1wej%27%29%3C%2Fscript%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case01-Tag2HtmlPageScope.jsp?userinput=%3Cscript%3Ealert%28%27wydyea1wej%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case01-Tag2HtmlPageScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case02-Tag2TagScope.jsp?userinput=%3C%2Ftextarea%3E%3Cscript%3Ealert%28%27wsky4hxyrq%27%29%3C%2Fscript%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case02-Tag2TagScope.jsp?userinput=%3C%2Ftextarea%3E%3Cscript%3Ealert%28%27wsky4hxyrq%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case02-Tag2TagScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case03-Tag2TagStructure.jsp?userinput=%3E%3C%2Finput%3E%3Cscript%3Ealert%28%27w6b8z9xs42%27%29%3C%2Fscript%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case03-Tag2TagStructure.jsp?userinput=%3E%3C%2Finput%3E%3Cscript%3Ealert%28%27w6b8z9xs42%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case03-Tag2TagStructure.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case04-Tag2HtmlComment.jsp?userinput=%3Cscript%3Ealert%28%27we46ulubow%27%29%3C%2Fscript%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case04-Tag2HtmlComment.jsp?userinput=%3Cscript%3Ealert%28%27we46ulubow%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case04-Tag2HtmlComment.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case05-Tag2Frameset.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwqn60pu56d%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case05-Tag2Frameset.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwqn60pu56d%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case05-Tag2Frameset.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case16-Js2ScriptSupportingProperty.jsp?userinput=javascript%3AString.fromCharCode%280%2Cw46p5j67sn%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case16-Js2ScriptSupportingProperty.jsp?userinput=javascript%3AString.fromCharCode%280%2Cw46p5j67sn%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case16-Js2ScriptSupportingProperty.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwuz5erpy4m%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwuz5erpy4m%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwl6t4jfyyq%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwl6t4jfyyq%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case19-Js2PropertyJsScope.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwokvtxub5k%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case19-Js2PropertyJsScope.jsp?userinput=javascript%3AString.fromCharCode%280%2Cwokvtxub5k%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case19-Js2PropertyJsScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp?userinput=javascript%3AString.fromCharCode%280%2Cw5l3wrag3s%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp?userinput=javascript%3AString.fromCharCode%280%2Cw5l3wrag3s%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case21-Vbs2PropertyVbsScope.jsp?userinput=javascript%3AString.fromCharCode%280%2Cw73dgy03j1%2C1%29%3B HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case21-Vbs2PropertyVbsScope.jsp?userinput=javascript%3AString.fromCharCode%280%2Cw73dgy03j1%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case21-Vbs2PropertyVbsScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp?userinput=String.fromCharCode%280%2Cwbj1f6ktsp%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp?userinput=String.fromCharCode%280%2Cwbj1f6ktsp%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp?userinput=String.fromCharCode%280%2Cw51ttvij67%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp?userinput=String.fromCharCode%280%2Cw51ttvij67%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case24-Js2ScriptTag.jsp?userinput=String.fromCharCode%280%2Cwt7iwjnvac%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case24-Js2ScriptTag.jsp?userinput=String.fromCharCode%280%2Cwt7iwjnvac%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case24-Js2ScriptTag.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp?userinput=String.fromCharCode%280%2Cw1dvkw7mr1%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp?userinput=String.fromCharCode%280%2Cw1dvkw7mr1%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case26-Vbs2ScriptTag.jsp?userinput=String.fromCharCode%280%2Cwoq11ijhmy%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case26-Vbs2ScriptTag.jsp?userinput=String.fromCharCode%280%2Cwoq11ijhmy%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case26-Vbs2ScriptTag.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case27-Js2ScriptTagOLCommentScope.jsp?userinput=String.fromCharCode%280%2Cwrwdzypeig%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case27-Js2ScriptTagOLCommentScope.jsp?userinput=String.fromCharCode%280%2Cwrwdzypeig%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case27-Js2ScriptTagOLCommentScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case28-Js2ScriptTagMLCommentScope.jsp?userinput=String.fromCharCode%280%2Cw42b0z05j7%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case28-Js2ScriptTagMLCommentScope.jsp?userinput=String.fromCharCode%280%2Cw42b0z05j7%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case28-Js2ScriptTagMLCommentScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case29-Vbs2ScriptTagOLCommentScope.jsp?userinput=String.fromCharCode%280%2Cwn3quhgunt%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case29-Vbs2ScriptTagOLCommentScope.jsp?userinput=String.fromCharCode%280%2Cwn3quhgunt%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case29-Vbs2ScriptTagOLCommentScope.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp?userinput=%3Cscript%3Ealert%28%27wjtaukszqn%27%29%3C%2Fscript%3E&userinput2=1234 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp?userinput=%3Cscript%3Ealert%28%27wjtaukszqn%27%29%3C%2Fscript%3E&userinput2=1234\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput2", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp?userinput=1234&userinput2=%3Cscript%3Ealert%28%27wez1syc43y%27%29%3C%2Fscript%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp?userinput=1234&userinput2=%3Cscript%3Ealert%28%27wez1syc43y%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp", 
+        "parameter": "userinput2", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp?userinput=%3Cscript%3Ealert%28%27w2az46zs23%27%29%3C%2Fscript%3E&__VIEWSTATE=%2FwEPDwUENTM4MWRkhsjF%2B62gWnhYUcEyuRwTHxGDVzA%3D HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp?userinput=%3Cscript%3Ealert%28%27w2az46zs23%27%29%3C%2Fscript%3E&__VIEWSTATE=%2FwEPDwUENTM4MWRkhsjF%2B62gWnhYUcEyuRwTHxGDVzA%3D\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp?userinput=%3Cimg%20src%3Djavascript%3Aalert%28%27wljkb7p6fd%27%29%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp?userinput=%3Cimg%20src%3Djavascript%3Aalert%28%27wljkb7p6fd%27%29%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp?anticsrf=0.38295684549715014&userinput=%3Cscript%3Ealert%28%27w9tywgmehn%27%29%3C%2Fscript%3E HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp?anticsrf=0.38295684549715014&userinput=%3Cscript%3Ealert%28%27w9tywgmehn%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case01-InjectionDirectlyInToDomXssSinkEval.jsp?userinput=String.fromCharCode%280%2Cwarsk5bjfv%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case01-InjectionDirectlyInToDomXssSinkEval.jsp?userinput=String.fromCharCode%280%2Cwarsk5bjfv%2C1%29\"", 
+        "path": "/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case01-InjectionDirectlyInToDomXssSinkEval.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case02-InjectionDirectlyInToDomXssSinkLocation.jsp?userinput=String.fromCharCode%280%2Cwqbn1d4lxx%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case02-InjectionDirectlyInToDomXssSinkLocation.jsp?userinput=String.fromCharCode%280%2Cwqbn1d4lxx%2C1%29\"", 
+        "path": "/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case02-InjectionDirectlyInToDomXssSinkLocation.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case03-InjectionInToVariableBeingAssignedToDomXssSinkEval.jsp?userinput=String.fromCharCode%280%2Cwrj4j9lavj%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case03-InjectionInToVariableBeingAssignedToDomXssSinkEval.jsp?userinput=String.fromCharCode%280%2Cwrj4j9lavj%2C1%29\"", 
+        "path": "/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case03-InjectionInToVariableBeingAssignedToDomXssSinkEval.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "GET /wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case04-InjectionInToVariableBeingAssignedToDomXssSinkLocation.jsp?userinput=String.fromCharCode%280%2Cwxfwp3uy41%2C1%29 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case04-InjectionInToVariableBeingAssignedToDomXssSinkLocation.jsp?userinput=String.fromCharCode%280%2Cwxfwp3uy41%2C1%29\"", 
+        "path": "/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case04-InjectionInToVariableBeingAssignedToDomXssSinkLocation.jsp", 
+        "parameter": "userinput", 
+        "method": "GET"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case01-Tag2HtmlPageScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case01-Tag2HtmlPageScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3Cscript%3Ealert%28%27wz9e0uujbr%27%29%3C%2Fscript%3E", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case01-Tag2HtmlPageScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case01-Tag2HtmlPageScope.jsp\" -d \"userinput=%3Cscript%3Ealert%28%27wz9e0uujbr%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case01-Tag2HtmlPageScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case02-Tag2TagScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case02-Tag2TagScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3C%2Ftextarea%3E%3Cscript%3Ealert%28%27wbxnqjnnf9%27%29%3C%2Fscript%3E", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case02-Tag2TagScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case02-Tag2TagScope.jsp\" -d \"userinput=%3C%2Ftextarea%3E%3Cscript%3Ealert%28%27wbxnqjnnf9%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case02-Tag2TagScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case03-Tag2TagStructure.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case03-Tag2TagStructure.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3E%3C%2Finput%3E%3Cscript%3Ealert%28%27wvjj2c6bs6%27%29%3C%2Fscript%3E", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case03-Tag2TagStructure.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case03-Tag2TagStructure.jsp\" -d \"userinput=%3E%3C%2Finput%3E%3Cscript%3Ealert%28%27wvjj2c6bs6%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case03-Tag2TagStructure.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case04-Tag2HtmlComment.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case04-Tag2HtmlComment.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3Cscript%3Ealert%28%27w9x5084ckt%27%29%3C%2Fscript%3E", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case04-Tag2HtmlComment.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case04-Tag2HtmlComment.jsp\" -d \"userinput=%3Cscript%3Ealert%28%27w9x5084ckt%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case04-Tag2HtmlComment.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case05-Tag2Frameset.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case05-Tag2Frameset.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cwlvvxcqjt0%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case05-Tag2Frameset.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case05-Tag2Frameset.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cwlvvxcqjt0%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case05-Tag2Frameset.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case16-Js2ScriptSupportingProperty.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case16-Js2ScriptSupportingProperty.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cws83par7oo%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case16-Js2ScriptSupportingProperty.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case16-Js2ScriptSupportingProperty.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cws83par7oo%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case16-Js2ScriptSupportingProperty.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cwncuy58cyy%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cwncuy58cyy%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cwnaawsvq5o%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cwnaawsvq5o%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case19-Js2PropertyJsScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case19-Js2PropertyJsScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cwpqx9gyjzy%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case19-Js2PropertyJsScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case19-Js2PropertyJsScope.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cwpqx9gyjzy%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case19-Js2PropertyJsScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cwhfeuuu6q5%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cwhfeuuu6q5%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case21-Vbs2PropertyVbsScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case21-Vbs2PropertyVbsScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=javascript%3AString.fromCharCode%280%2Cwj65i1ngas%2C1%29%3B", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case21-Vbs2PropertyVbsScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case21-Vbs2PropertyVbsScope.jsp\" -d \"userinput=javascript%3AString.fromCharCode%280%2Cwj65i1ngas%2C1%29%3B\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case21-Vbs2PropertyVbsScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwfsbeadyo6%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp\" -d \"userinput=String.fromCharCode%280%2Cwfsbeadyo6%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwzqbo1jc9q%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp\" -d \"userinput=String.fromCharCode%280%2Cwzqbo1jc9q%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case24-Js2ScriptTag.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case24-Js2ScriptTag.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwu72nti8bj%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case24-Js2ScriptTag.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case24-Js2ScriptTag.jsp\" -d \"userinput=String.fromCharCode%280%2Cwu72nti8bj%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case24-Js2ScriptTag.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwla0t5nd8t%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp\" -d \"userinput=String.fromCharCode%280%2Cwla0t5nd8t%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case26-Vbs2ScriptTag.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case26-Vbs2ScriptTag.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwfil4u3pvi%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case26-Vbs2ScriptTag.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case26-Vbs2ScriptTag.jsp\" -d \"userinput=String.fromCharCode%280%2Cwfil4u3pvi%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case26-Vbs2ScriptTag.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case27-Js2ScriptTagOLCommentScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case27-Js2ScriptTagOLCommentScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwrgadm2hsq%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case27-Js2ScriptTagOLCommentScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case27-Js2ScriptTagOLCommentScope.jsp\" -d \"userinput=String.fromCharCode%280%2Cwrgadm2hsq%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case27-Js2ScriptTagOLCommentScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case28-Js2ScriptTagMLCommentScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case28-Js2ScriptTagMLCommentScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cw0a6pvw2gb%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case28-Js2ScriptTagMLCommentScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case28-Js2ScriptTagMLCommentScope.jsp\" -d \"userinput=String.fromCharCode%280%2Cw0a6pvw2gb%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case28-Js2ScriptTagMLCommentScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case29-Vbs2ScriptTagOLCommentScope.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case29-Vbs2ScriptTagOLCommentScope.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=String.fromCharCode%280%2Cwf6ycnb05a%2C1%29", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case29-Vbs2ScriptTagOLCommentScope.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case29-Vbs2ScriptTagOLCommentScope.jsp\" -d \"userinput=String.fromCharCode%280%2Cwf6ycnb05a%2C1%29\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case29-Vbs2ScriptTagOLCommentScope.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3Cscript%3Ealert%28%27wqobyn5d1s%27%29%3C%2Fscript%3E&userinput2=default", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp\" -d \"userinput=%3Cscript%3Ealert%28%27wqobyn5d1s%27%29%3C%2Fscript%3E&userinput2=default\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput2", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=default&userinput2=%3Cscript%3Ealert%28%27w3j46nza7z%27%29%3C%2Fscript%3E", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp\" -d \"userinput=default&userinput2=%3Cscript%3Ealert%28%27w3j46nza7z%27%29%3C%2Fscript%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp", 
+        "parameter": "userinput2", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3Cscript%3Ealert%28%27whowwr4bcj%27%29%3C%2Fscript%3E&__VIEWSTATE=%2FwEPDwUENTM4MWRkhsjF%2B62gWnhYUcEyuRwTHxGDVzA%3D", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp\" -d \"userinput=%3Cscript%3Ealert%28%27whowwr4bcj%27%29%3C%2Fscript%3E&__VIEWSTATE=%2FwEPDwUENTM4MWRkhsjF%2B62gWnhYUcEyuRwTHxGDVzA%3D\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3Cimg%20src%3Djavascript%3Aalert%28%27we35lyeygp%27%29%3E", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp\" -d \"userinput=%3Cimg%20src%3Djavascript%3Aalert%28%27we35lyeygp%27%29%3E\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }, 
+      {
+        "info": "XSS vulnerability found via injection in the parameter userinput", 
+        "http_request": "POST /wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp\nContent-Type: application/x-www-form-urlencoded\n\nuserinput=%3Cscript%3Ealert%28%27w1pz0w3s8w%27%29%3C%2Fscript%3E&anticsrf=0.38295684549715014", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp\" -d \"userinput=%3Cscript%3Ealert%28%27w1pz0w3s8w%27%29%3C%2Fscript%3E&anticsrf=0.38295684549715014\"", 
+        "path": "/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp", 
+        "parameter": "userinput", 
+        "method": "POST"
+      }
+    ], 
+    "Htaccess Bypass": [], 
+    "Backup file": [], 
+    "SQL Injection": [], 
+    "Blind SQL Injection": [], 
+    "File Handling": [], 
+    "Potentially dangerous file": [], 
+    "CRLF Injection": [], 
+    "Commands execution": []
+  }, 
+  "infos": {
+    "date": "Tue, 20 Jan 2015 10:09:39 +0000", 
+    "scope": "domain", 
+    "version": "Wapiti 2.3.0", 
+    "target": "http://192.168.1.1:8080/wavsep/active/index-xss.jsp"
+  }, 
+  "classifications": {
+    "Resource consumption": {
+      "ref": {
+        "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')": "http://cwe.mitre.org/data/definitions/400.html", 
+        "http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)": "http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)"
+      }, 
+      "sol": "The involved script is maybe using the server resources (CPU, memory, network, file access...) in a non-efficient way", 
+      "desc": "Resource consumption description"
+    }, 
+    "Internal Server Error": {
+      "ref": {
+        "Wikipedia article for 5xx HTTP error codes": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_Error"
+      }, 
+      "sol": "More information about the error should be found in the server logs.", 
+      "desc": "Internal server error description"
+    }, 
+    "Cross Site Scripting": {
+      "ref": {
+        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": "http://cwe.mitre.org/data/definitions/79.html", 
+        "http://en.wikipedia.org/wiki/Cross-site_scripting": "http://en.wikipedia.org/wiki/Cross-site_scripting", 
+        "VulneraNET wiki: Cross Site Scripting Flaw article": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/Cross_Site_Scripting_Flaw", 
+        "http://www.owasp.org/index.php/Cross_Site_Scripting": "http://www.owasp.org/index.php/Cross_Site_Scripting"
+      }, 
+      "sol": "The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:  &lt;, &gt;, &amp;, &quot;, ', (, ), #, %, ; , +, -.", 
+      "desc": "Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications which allow code injection by malicious web users into the web pages viewed by other users. Examples of such code include HTML code and client-side scripts."
+    }, 
+    "Htaccess Bypass": {
+      "ref": {
+        "http://blog.teusink.net/2009/07/common-apache-htaccess-misconfiguration.html": "http://blog.teusink.net/2009/07/common-apache-htaccess-misconfiguration.html", 
+        "CWE-538: File and Directory Information Exposure": "http://cwe.mitre.org/data/definitions/538.html"
+      }, 
+      "sol": "Make sure every HTTP method is forbidden if the credentials are bad.", 
+      "desc": "htaccess files are used to restrict access to some files or HTTP method. In some case it may be possible to bypass this restriction and access the files."
+    }, 
+    "Backup file": {
+      "ref": {
+        "Testing for Old, Backup and Unreferenced Files (OWASP-CM-006)": "http://www.owasp.org/index.php/Testing_for_Old,_Backup_and_Unreferenced_Files_(OWASP-CM-006)", 
+        "CWE-530: Exposure of Backup File to an Unauthorized Control Sphere": "http://cwe.mitre.org/data/definitions/530.html"
+      }, 
+      "sol": "The webadmin must manually delete the backup files or remove it from the web root. He should also reconfigure its editor to deactivate automatic backups.", 
+      "desc": "It may be possible to find backup files of scripts on the webserver that the web-admin put here to save a previous version or backup files that are automaticallygenerated by the software editor used (like for example Emacs). These copies may reveal interesting informations like source code or credentials"
+    }, 
+    "SQL Injection": {
+      "ref": {
+        "http://www.owasp.org/index.php/SQL_Injection": "http://www.owasp.org/index.php/SQL_Injection", 
+        "http://en.wikipedia.org/wiki/SQL_injection": "http://en.wikipedia.org/wiki/SQL_injection", 
+        "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": "http://cwe.mitre.org/data/definitions/89.html"
+      }, 
+      "sol": "To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.", 
+      "desc": "SQL injection vulnerabilities allow an attacker to alter the queries executed on the backend database. An attacker may then be able to extract or modify informations stored in the database or even escalate his privileges on the system."
+    }, 
+    "Blind SQL Injection": {
+      "ref": {
+        "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": "http://cwe.mitre.org/data/definitions/89.html", 
+        "http://www.imperva.com/resources/adc/blind_sql_server_injection.html": "http://www.imperva.com/resources/adc/blind_sql_server_injection.html", 
+        "http://www.owasp.org/index.php/Blind_SQL_Injection": "http://www.owasp.org/index.php/Blind_SQL_Injection"
+      }, 
+      "sol": "To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.", 
+      "desc": "Blind SQL injection is a technique that exploits a vulnerability occurring in the database of an application. This kind of vulnerability is harder to detect than basic SQL injections because no error message will be displayed on the webpage."
+    }, 
+    "File Handling": {
+      "ref": {
+        "http://www.owasp.org/index.php/Path_Traversal": "http://www.owasp.org/index.php/Path_Traversal", 
+        "http://www.acunetix.com/websitesecurity/directory-traversal.htm": "http://www.acunetix.com/websitesecurity/directory-traversal.htm", 
+        "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')": "http://cwe.mitre.org/data/definitions/22.html"
+      }, 
+      "sol": "Prefer working without user input when using file system calls. Use indexes rather than actual portions of file names when templating or using language files (eg: value 5 from the user submission = Czechoslovakian, rather than expecting the user to return 'Czechoslovakian'). Ensure the user cannot supply all parts of the path - surround it with your path code. Validate the user's input by only accepting known good - do not sanitize the data. Use chrooted jails and code access policies to restrict where the files can be obtained or saved to.", 
+      "desc": "This attack is also known as Path or Directory Traversal, its aim is the access to files and directories that are stored outside the web root folder. The attacker tries to explore the directories stored in the web server. The attacker uses some techniques, for instance, the manipulation of variables that reference files with 'dot-dot-slash (../)' sequences and its variations to move up to root directory to navigate through the file system."
+    }, 
+    "Potentially dangerous file": {
+      "ref": {
+        "The Open Source Vulnerability Database": "http://osvdb.org/"
+      }, 
+      "sol": "Make sure the script is up-to-date and restrict access to it if possible", 
+      "desc": "A file with potential vulnerabilities has been found on the website."
+    }, 
+    "CRLF Injection": {
+      "ref": {
+        "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')": "http://cwe.mitre.org/data/definitions/93.html", 
+        "http://www.owasp.org/index.php/CRLF_Injection": "http://www.owasp.org/index.php/CRLF_Injection", 
+        "http://www.acunetix.com/websitesecurity/crlf-injection.htm": "http://www.acunetix.com/websitesecurity/crlf-injection.htm", 
+        "VulneraNET wiki: CRLF Injection article": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/CRLF_Injection"
+      }, 
+      "sol": "Check the submitted parameters and do not allow CRLF to be injected by filtering CRLF", 
+      "desc": "The term CRLF refers to Carriage Return (ASCII 13, \\r) Line Feed (ASCII 10, \\n). They're used to note the termination of a line, however, dealt with differently in today's popular Operating Systems. For example: in Windows both a CR and LF are required to note the end of a line, whereas in Linux/UNIX a LF is only required. This combination of CR and LR is used for example when pressing 'Enter' on the keyboard. Depending on the application being used, pressing 'Enter' generally instructs the application to start a new line, or to send a command."
+    }, 
+    "Commands execution": {
+      "ref": {
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')": "http://cwe.mitre.org/data/definitions/78.html", 
+        "http://www.owasp.org/index.php/Command_Injection": "http://www.owasp.org/index.php/Command_Injection"
+      }, 
+      "sol": "Prefer working without user input when using file system calls", 
+      "desc": "This attack consists in executing system commands on the server. The attacker tries to inject this commands in the request parameters"
+    }
+  }, 
+  "anomalies": {
+    "Resource consumption": [], 
+    "Internal Server Error": []
+  }
+}

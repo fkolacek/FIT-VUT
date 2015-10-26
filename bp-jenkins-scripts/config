@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Determine target IP 
+TARGET_IP=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1 -d'/') 
+
+WIVET_REPO_URL="https://github.com/fkolacek/bp-wivet.git"
+WIVET_REPO_PATH="wivet"
+WIVET_HTTP_PATH="http://$TARGET_IP/wivet"
+WIVET_TEST_COUNT=56
+
+WAVSEP_REPO_URL="https://github.com/fkolacek/bp-wavsep.git"
+WAVSEP_REPO_PATH="wavsep"
+WAVSEP_HTTP_PATH="http://$TARGET_IP:8082/wavsep"
+
+REVOK_REPO_URL="https://github.com/fkolacek/bp-revok"
+REVOK_TEST_REPO_URL="file:///home/test/bp-revok-test"
+REVOK_REPO_PATH="revok"
+
+LOGS_PATH="logs"
+
+DOCUMENT_ROOT=/var/www/html
+TOMCAT_ROOT=/var/lib/tomcat/webapps
+
+WIVET_REPO_PATH=$(readlink -f "$WIVET_REPO_PATH")
+WAVSEP_REPO_PATH=$(readlink -f "$WAVSEP_REPO_PATH")
+REVOK_REPO_PATH=$(readlink -f "$REVOK_REPO_PATH")
+LOGS_PATH=$(readlink -f "$LOGS_PATH")
+
+[ "$WIVET_REPO_PATH" == "" ] && { echo "[!] Wivet repo path is invalid: $WIVET_REPO_PATH"; exit 1; }
+[ "$WAVSEP_REPO_PATH" == "" ] && { echo "[!] Wavsep repo path is invalid: $WAVSEP_REPO_PATH"; exit 1; }
+[ "$REVOK_REPO_PATH" == "" ] && { echo "[!] Revok repo path is invalid: $REVOK_REPO_PATH"; exit 1; }
+[ "$LOGS_PATH" == "" ] && { echo "[!] Logs path is invalid: $LOGS_PATH"; exit 1; }
+
+

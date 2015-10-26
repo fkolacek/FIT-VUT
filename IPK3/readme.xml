@@ -1,0 +1,23 @@
+<ipk-projekt-3>
+<autor>
+František Koláček
+</autor>
+<login>
+xkolac@stud.fit.vutbr.cz
+</login>
+<datum>
+27.04.2013
+</datum>
+<soubory>
+<soubor jmeno="IClient.cpp" autor="František Koláček"/>
+<soubor jmeno="IException.h" autor="František Koláček" />
+<soubor jmeno="IException.cpp" autor="František Koláček" />
+<soubor jmeno="ISegment.h" autor="František Koláček" />
+<soubor jmeno="ISegment.cpp" autor="František Koláček" />
+<soubor jmeno="IServer.cpp" autor="František Koláček"/>
+<soubor jmeno="Makefile" autor="František Koláček" />
+</soubory>
+<protokol>
+Spolehlivý protokol je implementován dle zadání jako protokol s kumulativním potvrzováním. Protokol využívá pro spolehlivý přenos plovoucí okno, jehož velikost se v průběhu přenosu podle úspěšnosti přenosu těchto segmentů mění. Jednotlivé segmenty jsou číslované od 1. Pro ukončení přenosu po úspěšném přenesení těchto segmentů se využívá segment s číslem 0.
+</protokol>
+</ipk-projekt-3>

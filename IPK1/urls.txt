@@ -1,0 +1,15 @@
+http://www.fit.vutbr.cz
+http://www.fit.vutbr.cz:80/common/img/fit_logo_cz.gif
+http://www.fit.vutbr.cz/study/courses/IPK/public/some\ text.txt
+http://www.fit.vutbr.cz/study/courses/IPK/public/test/redir.php
+kolacek.it
+http://kolacek.it/qrcode.png
+kolacek.it/vcard.vcf
+fkolacek.cz
+http://www.cplusplus.com/reference/string/string/find/
+http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+http://www4.fit.vutbr.cz
+http://www.fit.vutbr.cz/common/img/fit_logo_cz.gif
+http://www.fit.vutbr.cz/study/courses/IPK/public/test/redir.php
+http://www.seznam.cz/st/img/logo-2.gif
+http://www.fit.vutbr.cz/study/courses/IPK/public/test/zero.txt

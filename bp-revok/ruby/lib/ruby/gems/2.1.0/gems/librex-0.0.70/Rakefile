@@ -1,0 +1,105 @@
+# encoding: utf-8
+
+require 'fileutils'
+ 
+task :build => :update do
+	Rake::Task['clean'].execute
+	puts "[*] Building librex.gemspec"
+	system "gem build librex.gemspec &> /dev/null"
+end
+ 
+task :release => :build do
+	puts "[*] Pushing librex to rubygems.org"
+	system "gem push librex-*.gem &> /dev/null"
+	Rake::Task['clean'].execute
+end
+
+task :clean do
+	system "rm *.gem &> /dev/null"
+end
+
+task :update do
+	puts "[*] Removing old Rex code..."
+	system "git rm -rf lib/ >/dev/null 2>&1"
+	::FileUtils.rm_rf("lib")
+	::FileUtils.mkdir("lib")
+
+	
+	tdir  = "src" + rand(0x100000000).to_s + rand(0x100000000).to_s 
+	tdir2 = "dst" + rand(0x100000000).to_s + rand(0x100000000).to_s 
+
+	begin
+	
+	puts "[*] Checking out Metasploit trunk..."
+	results = `git clone git://github.com/rapid7/metasploit-framework.git #{tdir2}; mkdir -p #{tdir}/lib; cp #{tdir2}/lib/rex.rb #{tdir}/lib/rex.rb; mv #{tdir2}/lib/rex #{tdir}/lib/rex`
+
+
+	puts "[*] Copying new files..."
+	::FileUtils.cp( ::File.join(tdir, "lib", "rex.rb"), "lib")
+	::FileUtils.cp_r( ::File.join(tdir, "lib", "rex"), ::File.join("lib", "rex") )
+	
+
+	system "git add lib/ --force"
+
+	puts "[*] Cleaning up tmp files..."	
+	::FileUtils.rm_rf(tdir)
+	::FileUtils.rm_rf(tdir2)
+	
+	version = ""
+	
+	print "[*] Updating librex.gemspec"
+	File.open("librex.gemspec.1", "w+") do |output|
+		File.open("librex.gemspec", "r") do |input|
+			while (line = input.gets)
+				
+				if line =~ /^VERSION = (.*)$/
+					version = $1.chop.gsub("\"",'').split(".")
+					version[2] = version[2].to_i + 1
+					version = version.join(".")
+					
+					print "#{version}\n"
+						
+					line = "VERSION = \"#{version}\"\n"
+				elsif line =~ /^REVISION = (.*)$/
+					line = "REVISION = \"#{Time.now.strftime("%Y%m%d%H%M%S")}\"\n"
+				else
+					line = line
+				end
+			
+				output.write line
+			end
+		end
+	end
+	
+	system "mv librex.gemspec.1 librex.gemspec"
+	
+	puts "[*] Updating README.markdown with new updated date"
+	File.open("README.markdown.1", "w+") do |output|
+		File.open("README.markdown", "r") do |input|
+			while (line = input.gets)						
+				if line =~ /^BUILD_DATE=(.*)$/
+					line = "BUILD_DATE='#{Time.now.strftime("%Y-%m-%d")}'\n"
+				else
+					line = line
+				end
+			
+				output.write line
+			end
+		end
+	end
+	
+	system "mv README.markdown.1 README.markdown &> /dev/null"
+	
+	system "git commit -a -m \"Updated at #{Time.now.strftime("%Y-%m-%d")}\" &> /dev/null"
+	puts "[*] Commiting and pushing updates"
+	system "git push origin mnaster"
+
+	rescue ::Exception
+		$stderr.puts "[-] Error: #{$!.class} #{$!} #{$!.backtrace}"
+	ensure
+		::FileUtils.rm_rf(tdir)		
+	end
+	
+	# Twitter tweet for the update, I am that lazy yes
+	puts "[*] Updated librex to v#{version} based on the latest Metasploit rex library. Available in rubygems."
+end

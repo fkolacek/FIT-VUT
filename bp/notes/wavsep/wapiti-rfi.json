@@ -1,0 +1,390 @@
+{
+  "vulnerabilities": {
+    "Cross Site Scripting": [], 
+    "Htaccess Bypass": [], 
+    "Backup file": [], 
+    "SQL Injection": [], 
+    "Blind SQL Injection": [], 
+    "File Handling": [
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=%2Fetc%2Fpasswd", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=%2Fetc%2Fpasswd", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=%2Fetc%2Fpasswd", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=%2Fetc%2Fpasswd", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Possible Java include/open vulnerability via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }
+    ], 
+    "Potentially dangerous file": [], 
+    "CRLF Injection": [], 
+    "Commands execution": []
+  }, 
+  "infos": {
+    "date": "Sat, 24 Jan 2015 19:00:29 +0000", 
+    "scope": "domain", 
+    "version": "Wapiti 2.3.0", 
+    "target": "http://192.168.1.1:8080/wavsep/active/index-rfi.jsp"
+  }, 
+  "classifications": {
+    "Resource consumption": {
+      "ref": {
+        "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')": "http://cwe.mitre.org/data/definitions/400.html", 
+        "http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)": "http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)"
+      }, 
+      "sol": "The involved script is maybe using the server resources (CPU, memory, network, file access...) in a non-efficient way", 
+      "desc": "Resource consumption description"
+    }, 
+    "Internal Server Error": {
+      "ref": {
+        "Wikipedia article for 5xx HTTP error codes": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_Error"
+      }, 
+      "sol": "More information about the error should be found in the server logs.", 
+      "desc": "Internal server error description"
+    }, 
+    "Cross Site Scripting": {
+      "ref": {
+        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": "http://cwe.mitre.org/data/definitions/79.html", 
+        "http://en.wikipedia.org/wiki/Cross-site_scripting": "http://en.wikipedia.org/wiki/Cross-site_scripting", 
+        "VulneraNET wiki: Cross Site Scripting Flaw article": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/Cross_Site_Scripting_Flaw", 
+        "http://www.owasp.org/index.php/Cross_Site_Scripting": "http://www.owasp.org/index.php/Cross_Site_Scripting"
+      }, 
+      "sol": "The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:  &lt;, &gt;, &amp;, &quot;, ', (, ), #, %, ; , +, -.", 
+      "desc": "Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications which allow code injection by malicious web users into the web pages viewed by other users. Examples of such code include HTML code and client-side scripts."
+    }, 
+    "Htaccess Bypass": {
+      "ref": {
+        "http://blog.teusink.net/2009/07/common-apache-htaccess-misconfiguration.html": "http://blog.teusink.net/2009/07/common-apache-htaccess-misconfiguration.html", 
+        "CWE-538: File and Directory Information Exposure": "http://cwe.mitre.org/data/definitions/538.html"
+      }, 
+      "sol": "Make sure every HTTP method is forbidden if the credentials are bad.", 
+      "desc": "htaccess files are used to restrict access to some files or HTTP method. In some case it may be possible to bypass this restriction and access the files."
+    }, 
+    "Backup file": {
+      "ref": {
+        "Testing for Old, Backup and Unreferenced Files (OWASP-CM-006)": "http://www.owasp.org/index.php/Testing_for_Old,_Backup_and_Unreferenced_Files_(OWASP-CM-006)", 
+        "CWE-530: Exposure of Backup File to an Unauthorized Control Sphere": "http://cwe.mitre.org/data/definitions/530.html"
+      }, 
+      "sol": "The webadmin must manually delete the backup files or remove it from the web root. He should also reconfigure its editor to deactivate automatic backups.", 
+      "desc": "It may be possible to find backup files of scripts on the webserver that the web-admin put here to save a previous version or backup files that are automaticallygenerated by the software editor used (like for example Emacs). These copies may reveal interesting informations like source code or credentials"
+    }, 
+    "SQL Injection": {
+      "ref": {
+        "http://www.owasp.org/index.php/SQL_Injection": "http://www.owasp.org/index.php/SQL_Injection", 
+        "http://en.wikipedia.org/wiki/SQL_injection": "http://en.wikipedia.org/wiki/SQL_injection", 
+        "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": "http://cwe.mitre.org/data/definitions/89.html"
+      }, 
+      "sol": "To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.", 
+      "desc": "SQL injection vulnerabilities allow an attacker to alter the queries executed on the backend database. An attacker may then be able to extract or modify informations stored in the database or even escalate his privileges on the system."
+    }, 
+    "Blind SQL Injection": {
+      "ref": {
+        "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": "http://cwe.mitre.org/data/definitions/89.html", 
+        "http://www.imperva.com/resources/adc/blind_sql_server_injection.html": "http://www.imperva.com/resources/adc/blind_sql_server_injection.html", 
+        "http://www.owasp.org/index.php/Blind_SQL_Injection": "http://www.owasp.org/index.php/Blind_SQL_Injection"
+      }, 
+      "sol": "To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.", 
+      "desc": "Blind SQL injection is a technique that exploits a vulnerability occurring in the database of an application. This kind of vulnerability is harder to detect than basic SQL injections because no error message will be displayed on the webpage."
+    }, 
+    "File Handling": {
+      "ref": {
+        "http://www.owasp.org/index.php/Path_Traversal": "http://www.owasp.org/index.php/Path_Traversal", 
+        "http://www.acunetix.com/websitesecurity/directory-traversal.htm": "http://www.acunetix.com/websitesecurity/directory-traversal.htm", 
+        "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')": "http://cwe.mitre.org/data/definitions/22.html"
+      }, 
+      "sol": "Prefer working without user input when using file system calls. Use indexes rather than actual portions of file names when templating or using language files (eg: value 5 from the user submission = Czechoslovakian, rather than expecting the user to return 'Czechoslovakian'). Ensure the user cannot supply all parts of the path - surround it with your path code. Validate the user's input by only accepting known good - do not sanitize the data. Use chrooted jails and code access policies to restrict where the files can be obtained or saved to.", 
+      "desc": "This attack is also known as Path or Directory Traversal, its aim is the access to files and directories that are stored outside the web root folder. The attacker tries to explore the directories stored in the web server. The attacker uses some techniques, for instance, the manipulation of variables that reference files with 'dot-dot-slash (../)' sequences and its variations to move up to root directory to navigate through the file system."
+    }, 
+    "Potentially dangerous file": {
+      "ref": {
+        "The Open Source Vulnerability Database": "http://osvdb.org/"
+      }, 
+      "sol": "Make sure the script is up-to-date and restrict access to it if possible", 
+      "desc": "A file with potential vulnerabilities has been found on the website."
+    }, 
+    "CRLF Injection": {
+      "ref": {
+        "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')": "http://cwe.mitre.org/data/definitions/93.html", 
+        "http://www.owasp.org/index.php/CRLF_Injection": "http://www.owasp.org/index.php/CRLF_Injection", 
+        "http://www.acunetix.com/websitesecurity/crlf-injection.htm": "http://www.acunetix.com/websitesecurity/crlf-injection.htm", 
+        "VulneraNET wiki: CRLF Injection article": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/CRLF_Injection"
+      }, 
+      "sol": "Check the submitted parameters and do not allow CRLF to be injected by filtering CRLF", 
+      "desc": "The term CRLF refers to Carriage Return (ASCII 13, \\r) Line Feed (ASCII 10, \\n). They're used to note the termination of a line, however, dealt with differently in today's popular Operating Systems. For example: in Windows both a CR and LF are required to note the end of a line, whereas in Linux/UNIX a LF is only required. This combination of CR and LR is used for example when pressing 'Enter' on the keyboard. Depending on the application being used, pressing 'Enter' generally instructs the application to start a new line, or to send a command."
+    }, 
+    "Commands execution": {
+      "ref": {
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')": "http://cwe.mitre.org/data/definitions/78.html", 
+        "http://www.owasp.org/index.php/Command_Injection": "http://www.owasp.org/index.php/Command_Injection"
+      }, 
+      "sol": "Prefer working without user input when using file system calls", 
+      "desc": "This attack consists in executing system commands on the server. The attacker tries to inject this commands in the request parameters"
+    }
+  }, 
+  "anomalies": {
+    "Resource consumption": [], 
+    "Internal Server Error": [
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "GET /wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-GET-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=http%3A%2F%2Fwww.google.fr%2F%3F", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=http%3A%2F%2Fwww.google.fr%2F%3F\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }, 
+      {
+        "info": "The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter target", 
+        "http_request": "POST /wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntarget=%2Fetc%2Fpasswd", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp\" -d \"target=%2Fetc%2Fpasswd\"", 
+        "path": "/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }
+    ]
+  }
+}

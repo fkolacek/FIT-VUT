@@ -1,0 +1,7 @@
+server/bin/*
+server/obj/*
+client/bin/*
+client/obj/*
+ipk2cpp*
+client/ipk2cpp*
+xkolac12.tar.gz

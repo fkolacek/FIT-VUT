@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1363044514 source:/home/filgy/projects/IPK2/server/IException.cpp
+	"IException.h"
+
+1363044499 /home/filgy/projects/IPK2/server/IException.h
+	<string>
+
+1363127373 source:/home/filgy/projects/IPK2/server/IUser.cpp
+	"IUser.h"
+
+1363126904 /home/filgy/projects/IPK2/server/IUser.h
+	<string>
+
+1364730121 source:/home/filgy/projects/IPK2/server/IUsersDatabase.cpp
+	"IUsersDatabase.h"
+
+1364729797 /home/filgy/projects/IPK2/server/IUsersDatabase.h
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+	<map>
+	<vector>
+	<algorithm>
+	<regex.h>
+	"IException.h"
+	"IUser.h"
+
+1361969862 source:/home/filgy/projects/IPK2/server/main.cpp
+	<iostream>
+	"IUsersDatabase.h"
+

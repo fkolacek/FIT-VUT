@@ -1,0 +1,55 @@
+<project name="ija2013" basedir="." default="main">
+
+	<property name="build.dir"   value="build"/>
+	<property name="dest.dir"     value="dest"/>
+	<property name="doc.dir"     value="doc"/>
+	<property name="lib.dir"     value="lib"/>
+	<property name="src.dir"     value="src"/>
+	<property name="gfx.dir"     value="lib/gfx"/>
+	
+	
+	<property name="main-class" value="gui.QueenUI" />
+	
+	<path id="classpath">
+		<fileset dir="${lib.dir}" includes="**/*.jar"/>
+	</path>
+	
+	<path id="application" location="${dest.dir}/${ant.project.name}.jar" />
+	
+    <target name="clean">
+		<delete dir="${doc.dir}"/>
+        <delete dir="${build.dir}"/>
+		<delete dir="${dest.dir}"/>
+    </target>
+	
+	<target name="build">
+		<mkdir dir="${build.dir}" />
+		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}" />
+    </target>
+	
+	<target name="jar">
+		<mkdir dir="${dest.dir}" />
+		<jar jarfile="${dest.dir}/${ant.project.name}.jar" basedir="${build.dir}">
+			<manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+			
+			<fileset dir="${gfx.dir}">
+				<include name="**/*.png" />
+			</fileset>			
+		</jar>			
+	</target>
+	
+	<target name="doc">
+		<javadoc sourcepath="${src.dir}" destdir="${doc.dir}" />
+	</target>
+	
+	<target name="run">
+		<java jar="${dest.dir}/${ant.project.name}.jar" fork="true"/>
+	</target>
+	
+	<target name="compile" depends="clean, build,jar,doc" />	
+	<target name="main" depends="clean,build,jar,doc" />	
+	
+	<description>Builds and runs project Queen</description>
+</project>

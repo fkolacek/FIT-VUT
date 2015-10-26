@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/app_icon.png</file>
+        <file>images/app_icon_s.png</file>
+        <file>images/smile_00.png</file>
+        <file>images/smile_01.png</file>
+        <file>images/smile_02.png</file>
+        <file>images/smile_03.png</file>
+        <file>images/smile_04.png</file>
+        <file>images/smile_10.png</file>
+        <file>images/smile_11.png</file>
+        <file>images/smile_12.png</file>
+        <file>images/smile_13.png</file>
+        <file>images/smile_14.png</file>
+        <file>images/smile_20.png</file>
+        <file>images/smile_21.png</file>
+        <file>images/smile_22.png</file>
+        <file>images/smile_23.png</file>
+        <file>images/smile_24.png</file>
+        <file>images/smile_30.png</file>
+        <file>images/smile_31.png</file>
+        <file>images/smile_32.png</file>
+        <file>images/smile_33.png</file>
+        <file>images/smile_34.png</file>
+        <file>images/smile_40.png</file>
+        <file>images/smile_41.png</file>
+        <file>images/smile_42.png</file>
+        <file>images/smile_43.png</file>
+        <file>images/smile_44.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+# EASY-INSTALL-SCRIPT: 'mitmproxy==0.11.3','mitmdump'
+__requires__ = 'mitmproxy==0.11.3'
+__import__('pkg_resources').run_script('mitmproxy==0.11.3', 'mitmdump')

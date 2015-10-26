@@ -1,0 +1,418 @@
+2014-07-29 16:20:21,247 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Tue Jul 29 16:20:21 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-07-29 16:20:23,018 | INFO  | PListStore:[/home/test/revok-0.7.4/activemq/${activemq.data}/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-07-29 16:20:23,152 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/test/revok-0.7.4/activemq/${activemq.data}/kahadb] | org.apache.activemq.broker.BrokerService | main
+2014-07-29 16:20:23,280 | INFO  | JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-07-29 16:20:23,509 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-51700-1406622023361-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2014-07-29 16:20:23,528 | INFO  | Listening for connections at: stomp://dhcp-136-57.nay.redhat.com:61613 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2014-07-29 16:20:23,528 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2014-07-29 16:20:23,534 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-51700-1406622023361-0:1) started | org.apache.activemq.broker.BrokerService | main
+2014-07-29 16:20:23,534 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2014-07-30 11:15:04,947 | INFO  | Journal failed while writing at: 1609712 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:29:31,593 | INFO  | Journal failed while writing at: 1630180 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:29:36,608 | INFO  | Journal failed while writing at: 1630299 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:29:41,628 | INFO  | Journal failed while writing at: 1630418 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:29:46,638 | INFO  | Journal failed while writing at: 1630537 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:29:51,649 | INFO  | Journal failed while writing at: 1630656 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:29:56,757 | INFO  | Journal failed while writing at: 1630775 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:01,774 | INFO  | Journal failed while writing at: 1630894 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:06,786 | INFO  | Journal failed while writing at: 1631013 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:11,813 | INFO  | Journal failed while writing at: 1631132 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:17,219 | INFO  | Journal failed while writing at: 1631251 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:22,256 | INFO  | Journal failed while writing at: 1631370 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:27,266 | INFO  | Journal failed while writing at: 1631489 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:32,285 | INFO  | Journal failed while writing at: 1631608 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-30 11:30:37,298 | INFO  | Journal failed while writing at: 1631727 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | Activ2014-07-30 14:03:10,117 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-51700-1406622023361-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2014-07-30 14:03:10,387 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2014-07-30 14:03:10,496 | INFO  | PListStore:[/home/test/revok-0.7.4/activemq/${activemq.data}/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2014-07-30 14:03:10,496 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2014-07-30 14:03:10,496 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2014-07-30 14:03:10,496 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2014-07-30 17:56:21,429 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Wed Jul 30 17:56:21 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-07-30 17:56:23,497 | INFO  | PListStore:[/home/test/revok-0.7.4/activemq/${activemq.data}/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-07-30 17:56:23,609 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/test/revok-0.7.4/activemq/${activemq.data}/kahadb] | org.apache.activemq.broker.BrokerService | main
+2014-07-30 17:56:24,126 | INFO  | JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-07-30 17:56:24,355 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1609740..1609830 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-30 17:56:24,360 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1630180..1638509 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-30 17:56:24,375 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1642437..1705387 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-30 17:56:24,406 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1712052..1716335 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-30 17:56:24,411 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1720263..1848544 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-30 17:56:24,729 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-30 17:56:24,755 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-30 17:56:25,129 | INFO  | Recovery replayed 13523 operations from the journal in 0.397 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-30 17:56:25,336 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-48195-1406714185162-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2014-07-30 17:56:25,361 | INFO  | Listening for connections at: stomp://dhcp-136-57.nay.redhat.com:61613 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2014-07-30 17:56:25,361 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2014-07-30 17:56:25,374 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-48195-1406714185162-0:1) started | org.apache.activemq.broker.BrokerService | main
+2014-07-30 17:56:25,374 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2014-07-31 11:34:40,914 | INFO  | Journal failed while writing at: 3350443 | org.apache.activemq.store.kahadb.disk.journal.DataFileAppender | ActiveMQ Data File Writer
+2014-07-312014-07-31 14:01:45,203 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Thu Jul 31 14:01:45 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-07-31 14:01:47,556 | INFO  | PListStore:[/home/test/revok-0.7.4/activemq/${activemq.data}/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-07-31 14:01:47,670 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/test/revok-0.7.4/activemq/${activemq.data}/kahadb] | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:01:48,556 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1609740..1609830 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:01:48,567 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1630180..1638509 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:01:48,596 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1642437..1705387 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:01:48,623 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1712052..1716335 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:01:48,693 | INFO  | JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-07-31 14:01:48,841 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1720263..1848544 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:01:49,050 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 3350443..3354726 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:01:49,414 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-31 14:01:49,444 | ERROR | Failed to start Apache ActiveMQ ([localhost, null], java.io.IOException: Invalid location: 1:3539800, : java.lang.NegativeArraySizeException) | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:01:49,454 | INFO  | Apache ActiveMQ 5.10.0 (localhost, null) is shutting down | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:01:49,455 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | main
+2014-07-31 14:01:49,463 | INFO  | PListStore:[/home/test/revok-0.7.4/activemq/${activemq.data}/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-07-31 14:01:49,463 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | main
+2014-07-31 14:01:49,463 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | main
+2014-07-31 14:01:49,463 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | main
+2014-07-31 14:01:49,994 | INFO  | Apache ActiveMQ 5.10.0 (localhost, null) uptime 2.406 seconds | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:01:49,994 | INFO  | Apache ActiveMQ 5.10.0 (localhost, null) is shutdown | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:01:49,994 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Thu Jul 31 14:01:45 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-07-31 14:01:49,999 | WARN  | Exception thrown from LifecycleProcessor on context close | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Thu Jul 31 14:01:45 CST 2014]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:360)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1057)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1010)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.activemq.hooks.SpringContextHook.run(SpringContextHook.java:30)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerService.stop(BrokerService.java:809)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerService.stop(XBeanBrokerService.java:122)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:601)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerService.afterPropertiesSet(XBeanBrokerService.java:73)[activemq-spring-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1638)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1579)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-07-31 14:14:15,082 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Thu Jul 31 14:14:15 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-07-31 14:14:16,493 | INFO  | PListStore:[/home/test/revok-0.7.4/activemq/${activemq.data}/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-07-31 14:14:16,569 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/test/revok-0.7.4/activemq/${activemq.data}/kahadb] | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:14:16,591 | INFO  | JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-07-31 14:14:16,700 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1609740..1609830 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:14:16,702 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1630180..1638509 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:14:16,710 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1642437..1705387 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:14:16,718 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1712052..1716335 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:14:16,719 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1720263..1848544 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:14:16,750 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 3350443..3354726 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-07-31 14:14:16,996 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-31 14:14:17,028 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-31 14:14:17,037 | INFO  | Recovery replayed 1 operations from the journal in 0.036 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-07-31 14:14:17,264 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-34741-1406787257090-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:14:17,302 | INFO  | Listening for connections at: stomp://dhcp-136-57.nay.redhat.com:61613 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2014-07-31 14:14:17,302 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2014-07-31 14:14:17,316 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-34741-1406787257090-0:1) started | org.apache.activemq.broker.BrokerService | main
+2014-07-31 14:14:17,316 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2014-08-04 13:09:36,172 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4b0a034e: startup date [Mon Aug 04 13:09:36 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-04 13:09:39,420 | ERROR | Failed to load: file [/home/test/revok-0.7.5/activemq/activemq.xml], reason: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory) | org.apache.activemq.xbean.XBeanBrokerFactory | main
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.importBeanDefinitionResource(XBeanBeanDefinitionDocumentReader.java:129)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseDefaultElement(XBeanBeanDefinitionDocumentReader.java:95)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseBeanDefinitions(XBeanBeanDefinitionDocumentReader.java:81)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanXmlBeanDefinitionReader.registerBeanDefinitions(XBeanXmlBeanDefinitionReader.java:79)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:111)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:104)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-08-04 13:40:52,440 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4b0a034e: startup date [Mon Aug 04 13:40:52 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-04 13:40:53,540 | ERROR | Failed to load: file [/home/test/revok-0.7.5/activemq/activemq.xml], reason: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory) | org.apache.activemq.xbean.XBeanBrokerFactory | main
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.importBeanDefinitionResource(XBeanBeanDefinitionDocumentReader.java:129)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseDefaultElement(XBeanBeanDefinitionDocumentReader.java:95)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseBeanDefinitions(XBeanBeanDefinitionDocumentReader.java:81)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanXmlBeanDefinitionReader.registerBeanDefinitions(XBeanXmlBeanDefinitionReader.java:79)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:111)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:104)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-08-05 11:22:42,063 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4b0a034e: startup date [Tue Aug 05 11:22:42 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-05 11:22:43,173 | ERROR | Failed to load: file [/home/test/revok-0.7.5/activemq/activemq.xml], reason: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory) | org.apache.activemq.xbean.XBeanBrokerFactory | main
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.importBeanDefinitionResource(XBeanBeanDefinitionDocumentReader.java:129)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseDefaultElement(XBeanBeanDefinitionDocumentReader.java:95)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseBeanDefinitions(XBeanBeanDefinitionDocumentReader.java:81)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanXmlBeanDefinitionReader.registerBeanDefinitions(XBeanXmlBeanDefinitionReader.java:79)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:111)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:104)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-08-05 11:24:51,223 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4b0a034e: startup date [Tue Aug 05 11:24:51 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-05 11:24:52,384 | ERROR | Failed to load: file [/home/test/revok-0.7.5/activemq/activemq.xml], reason: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory) | org.apache.activemq.xbean.XBeanBrokerFactory | main
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.importBeanDefinitionResource(XBeanBeanDefinitionDocumentReader.java:129)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseDefaultElement(XBeanBeanDefinitionDocumentReader.java:95)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseBeanDefinitions(XBeanBeanDefinitionDocumentReader.java:81)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanXmlBeanDefinitionReader.registerBeanDefinitions(XBeanXmlBeanDefinitionReader.java:79)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:111)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:104)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-08-05 11:28:14,655 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@4b0a034e: startup date [Tue Aug 05 11:28:14 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-05 11:28:15,787 | ERROR | Failed to load: file [/home/test/revok-0.7.5/activemq/activemq.xml], reason: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory) | org.apache.activemq.xbean.XBeanBrokerFactory | main
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from file [/home/test/revok-0.7.5/activemq/jetty.xml]; nested exception is java.io.FileNotFoundException: jetty.xml (No such file or directory)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.importBeanDefinitionResource(XBeanBeanDefinitionDocumentReader.java:129)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseDefaultElement(XBeanBeanDefinitionDocumentReader.java:95)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseBeanDefinitions(XBeanBeanDefinitionDocumentReader.java:81)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.v2.XBeanXmlBeanDefinitionReader.registerBeanDefinitions(XBeanXmlBeanDefinitionReader.java:79)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:111)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:104)[xbean-spring-3.16.jar:3.16]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-08-08 11:26:45,998 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Fri Aug 08 11:26:45 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-08 11:26:48,247 | INFO  | PListStore:[/home/test/revok-0.7.5_2/activemq/${activemq.data}/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-08-08 11:26:48,385 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/test/revok-0.7.5_2/activemq/${activemq.data}/kahadb] | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:26:48,833 | WARN  | Failed to start JMX connector Cannot bind to URL [rmi://localhost:1099/jmxrmi]: javax.naming.NameAlreadyBoundException: jmxrmi [Root exception is java.rmi.AlreadyBoundException: jmxrmi]. Will restart management to re-create JMX connector, trying to remedy this issue. | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-08-08 11:26:48,899 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1609740..1609830 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:26:48,901 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1630180..1638509 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:26:48,910 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1642437..1705387 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:26:48,924 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1712052..1716335 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:26:48,925 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1720263..1848544 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:26:48,981 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 3350443..3354726 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:26:50,732 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:26:50,830 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:26:52,565 | INFO  | Recovery replayed 14265 operations from the journal in 1.806 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:26:54,021 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-57251-1407468412627-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:26:54,215 | WARN  | Failed to start JMX connector Cannot bind to URL [rmi://localhost:1099/jmxrmi]: javax.naming.NameAlreadyBoundException: jmxrmi [Root exception is java.rmi.AlreadyBoundException: jmxrmi]. Will restart management to re-create JMX connector, trying to remedy this issue. | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-08-08 11:26:54,230 | ERROR | Failed to start Apache ActiveMQ ([localhost, ID:dhcp-136-57.nay.redhat.com-57251-1407468412627-0:1], java.io.IOException: Transport Connector could not be registered in JMX: Failed to bind to server socket: stomp://0.0.0.0:61613 due to: java.net.BindException: Address already in use) | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:26:54,230 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-57251-1407468412627-0:1) is shutting down | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:26:54,230 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | main
+2014-08-08 11:26:54,234 | INFO  | PListStore:[/home/test/revok-0.7.5_2/activemq/${activemq.data}/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-08-08 11:26:54,234 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | main
+2014-08-08 11:26:54,234 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | main
+2014-08-08 11:26:54,235 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | main
+2014-08-08 11:26:54,594 | INFO  | KahaDB: Recovering checkpoint thread after death | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:26:54,870 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-57251-1407468412627-0:1) uptime 6.583 seconds | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:26:54,870 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-57251-1407468412627-0:1) is shutdown | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:26:54,870 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Fri Aug 08 11:26:45 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-08 11:26:54,873 | WARN  | Exception thrown from LifecycleProcessor on context close | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Fri Aug 08 11:26:45 CST 2014]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:360)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1057)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1010)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.activemq.hooks.SpringContextHook.run(SpringContextHook.java:30)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerService.stop(BrokerService.java:809)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerService.stop(XBeanBrokerService.java:122)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:601)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerService.afterPropertiesSet(XBeanBrokerService.java:73)[activemq-spring-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1638)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1579)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1509)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)[spring-beans-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)[spring-context-3.2.8.RELEASE.jar:3.2.8.RELEASE]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)[xbean-spring-3.16.jar:3.16]
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)[xbean-spring-3.16.jar:3.16]
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)[activemq-spring-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)[activemq-broker-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)[activemq-console-5.10.0.jar:5.10.0]
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)[activemq-console-5.10.0.jar:5.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)[:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)[:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)[:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606)[:1.7.0_45]
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)[activemq.jar:5.10.0]
+	at org.apache.activemq.console.Main.main(Main.java:115)[activemq.jar:5.10.0]
+2014-08-08 11:30:39,673 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Fri Aug 08 11:30:39 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2014-08-08 11:30:41,103 | INFO  | PListStore:[/home/test/revok-0.7.5_2/activemq/${activemq.data}/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2014-08-08 11:30:41,228 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/test/revok-0.7.5_2/activemq/${activemq.data}/kahadb] | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:30:41,253 | INFO  | JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi | org.apache.activemq.broker.jmx.ManagementContext | JMX connector
+2014-08-08 11:30:41,356 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1609740..1609830 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:30:41,358 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1630180..1638509 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:30:41,366 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1642437..1705387 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:30:41,379 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1712052..1716335 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:30:41,382 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 1720263..1848544 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:30:41,413 | INFO  | Corrupt journal records found in '${activemq.data}/kahadb/db-1.log' between offsets: 3350443..3354726 | org.apache.activemq.store.kahadb.disk.journal.Journal | main
+2014-08-08 11:30:41,659 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:30:41,695 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:30:41,701 | INFO  | Recovery replayed 1 operations from the journal in 0.032 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2014-08-08 11:30:41,894 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-58503-1407468641762-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:30:41,964 | INFO  | Listening for connections at: stomp://dhcp-136-57.nay.redhat.com:61613 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2014-08-08 11:30:41,964 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2014-08-08 11:30:41,984 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-58503-1407468641762-0:1) started | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:30:41,984 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:30:41,984 | WARN  | Store limit is 10240 mb (current store usage is 4 mb). The data directory: /home/test/revok-0.7.5_2/activemq/${activemq.data}/kahadb only has 9353 mb of usable space - resetting to maximum available disk space: 9358 mb | org.apache.activemq.broker.BrokerService | main
+2014-08-08 11:31:53,787 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-58503-1407468641762-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-5
+2014-08-08 11:31:53,787 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-5
+2014-08-08 11:31:53,864 | INFO  | PListStore:[/home/test/revok-0.7.5_2/activemq/${activemq.data}/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-5
+2014-08-08 11:31:53,864 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-5
+2014-08-08 11:31:53,864 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-5
+2014-08-08 11:31:53,865 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-5
+2014-08-08 11:31:54,374 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-58503-1407468641762-0:1) uptime 1 minute | org.apache.activemq.broker.BrokerService | Thread-5
+2014-08-08 11:31:54,374 | INFO  | Apache ActiveMQ 5.10.0 (localhost, ID:dhcp-136-57.nay.redhat.com-58503-1407468641762-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-5
+2014-08-08 11:31:54,375 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@58dec5c: startup date [Fri Aug 08 11:30:39 CST 2014]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-5

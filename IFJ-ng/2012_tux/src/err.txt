@@ -1,0 +1,3 @@
+process_begin: CreateProcess((null), gcc -c main.c -o main.o -Wall, ...) failed.
+make (e=2): Systém nemùže nalézt uvedený soubor.
+make: *** [main.o] Error 2

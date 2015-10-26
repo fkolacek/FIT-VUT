@@ -1,0 +1,48 @@
+==============================  Wapiti vs Wavsep ============================== 
+
+RUN: python bin/wapiti http://192.168.1.1:8080/wavsep/active/index-xss.jsp --start "http://192.168.1.1:8080/wavsep/active/index-xss.jsp" --scope "domain" --module "-all,xss,permanentxss" --color --verbose 2 --format "html"
+OUT: wapiti-xss.json
+
+RUN: python bin/wapiti http://192.168.1.1:8080/wavsep/active/index-sql.jsp --start "http://192.168.1.1:8080/wavsep/active/index-sql.jsp" --scope "domain" --module "-all,blindsql,sql" --color --verbose 2 --format "html"
+OUT: wapiti-sql.json
+
+RUN: python bin/wapiti http://192.168.1.1:8080/wavsep/active/index-lfi.jsp --start "http://192.168.1.1:8080/wavsep/active/index-lfi.jsp" --scope "domain" --module "-all,file" --color --verbose 2 --format "html"
+OUT: wapiti-lfi.json
+
+RUN: python bin/wapiti http://192.168.1.1:8080/wavsep/active/index-lfi.jsp --start "http://192.168.1.1:8080/wavsep/active/index-rfi.jsp" --scope "domain" --module "-all,crlf,file" --color --verbose 2 --format "html"
+OUT: wapit-rfi.json
+
+============================== W3AF vs Wavsep ==============================
+
+RUN: w3af_gui (craw: web_spider, audit: xss, grtep: dom_xss)
+OUT: w3af-xss.csv
+
+RUN: w3af_gui (craw: web_spider, audit: sql, blindsql)
+OUT: w3af-sql.csv
+
+RUN: w3af_gui (craw: web_spider, audit: xss, lfi, grep: dom_xss)
+OUT: w3af-rfi.csv
+
+RUN: w3af_gui (craw: web_spider, audit: lfi)
+OUT: w3af-lfi.csv
+
+============================== Revok vs Wavsep ============================== 
+
+RUN: xss (xss, session id, cross-origin, frame-busting, cookie-att, session-fix, anti-refl, http-method)
+OUT: revok-xss.html
+
+RUN: sqli (sqli)
+OUT: revok-sql.html
+
+RUN: lfi (path traversal)
+OUT: revok-lfi.html
+
+RUN: rfi (xss, path traversal, )
+OUT: revok-rfi.html
+
+============================== Arachni vs Wavsep ============================== 
+
+
+============================== ZAP vs Wavsep ============================== 
+
+

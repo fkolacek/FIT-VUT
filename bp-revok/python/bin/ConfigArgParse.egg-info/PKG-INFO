@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: ConfigArgParse
+Version: 0.9.1
+Summary: A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
+Home-page: https://github.com/zorro3/ConfigArgParse
+Author: Zorro
+Author-email: zorro3.github@gmail.com
+License: MIT
+Description: ok
+Keywords: options,argparse,ConfigArgParse,config,environment variables,envvars,ENV,environment,optparse
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy

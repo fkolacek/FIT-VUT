@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="inp">
+
+    <!--  Project description -->
+    <name>Procesor BrainFucku</name>
+    <author>Frantisek Kolacek</author>
+    <authoremail>xkolac12@stud.fit.vutbr.cz</authoremail>
+    <description>8-bitovy procesor (BrainFuck interpreter)</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga ngcpath="fpga/ngc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+        <file>lcdctrl.vhd</file>
+        <file>kbctrl.vhd</file>
+        <file>rom.vhd</file>
+        <file>ram.vhd</file>
+        <file>cpu.vhd</file>
+        <file>top.vhd</file>
+
+        <!-- soubory pro simulaci -->
+        <file context="sim">fpga/sim/tb.vhd</file>
+        <file context="sim">fpga/models/keyboard/keyboard.vhd</file>
+        <file context="sim">fpga/models/lcd/lcd.vhd</file>
+        
+    </fpga>
+
+</project>

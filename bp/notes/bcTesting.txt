@@ -1,0 +1,74 @@
+==============================  Wapiti vs Wivet ============================== 
+
+[fkolacek@scanners wapiti]$ python bin/wapiti-getcookie cookie.json http://172.16.0.102/login.php
+[fkolacek@scanners wapiti]$ cat cookie.json 
+{
+  ".172.16.0.102": {
+    "/": {
+      "PHPSESSID": {
+        "version": 0, 
+        "expires": null, 
+        "secure": false, 
+        "value": "2eibn3saqto3nsqoe9j514mkj2", 
+        "port": null
+      }
+    }
+  }
+}
+
+
+[fkolacek@scanners wapiti]$ python bin/wapiti http://172.16.0.102/wivet/index.php --start "http://172.16.0.102/wivet/index.php" --scope "domain" --module "-all,xss" --color --verbose 2 --format "html" -c cookie.json -x "http://172.16.0.102/wivet/logout.php"
+OUT: wapiti_xss_only.html (44%)
+[fkolacek@scanners wapiti]$ python bin/wapiti http://172.16.0.102/wivet/index.php --start "http://172.16.0.102/wivet/index.php" --scope "domain" --module "all" --color --verbose 2 --format "html" -x "http://172.16.0.102/wivet/logout.php"
+OUT: wapiti.html (44%)
+
+============================== W3AF vs Wivet ==============================
+
+[fkolacek@scanners w3af]$ ./w3af_gui
+
+RUN: crawl (web_spider)
+OUT: w3af_spider_only.html (12%) (few seconds)
+
+RUN: crawl (content_negotiation, digi_sum, dir_file_bruter, dot_listing, genexus_xml, phpinfo, robots_txt, sitemap_xml, url_fuzzer, user_dir, web_spider, wsdl_finder)
+OUT: w3af_basic.html (16%) 10min
+
+RUN: crawl (web_spider, digit_sum)
+OUT: w3af_minimalistic.html (16%) (few seconds)
+
+RUN crawl (all)
+OUT: 
+
+
+
+optional: crawl (content_negotiation, dir_file_bruter, user_dir, wsdl_finder, genexus_xml, find_backdoors, oracle_discovery, urllist_txt, wordpress_*)
+		: grep (all)
+
+============================== Revok vs Wivet ============================== 
+[fkolacek@scanners bin]$ ./revok/revokd start
+[fkolacek@scanners bin]$ firefox http://localhost:3030
+
+RUN: modules: all
+OUT: revok_all.html (0%) 10mins, 4 mins
+
+============================== Arachni vs Wivet ============================== 
+[fkolacek@scanners bin]$ ./arachni/bin/arachni_web
+[fkolacek@scanners bin]$ firefox http://localhost:9292
+
+RUN: ./bin/arachni http://172.16.0.102/wivet/ --checks trainer --audit-links --audit-forms --scope-exclude-pattern=logout --http-cookie-string="PHPSESSID=2eibn3saqto3nsqoe9j514mkj2" --http-proxy localhost:8080
+OUT: arachni_trainer.html (96%)
+
+RUN: xss_wivet
+OUT: arachni_xss.html (96%)
+
+============================== ZAP vs Wivet ============================== 
+
+RUN: basic
+OUT: zap_minimal.html (10%)
+
+RUN: basic, substree
+OUT: zap_subtree.html (16%)
+
+RUN: basic, ajax
+OUT: zap_ajax.html (69%)
+
+

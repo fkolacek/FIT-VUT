@@ -1,0 +1,171 @@
+%============================================================================
+% tento soubor pouzijte jako zaklad
+% (c) 2008 Michal Bidlo
+% E-mail: bidlom AT fit vutbr cz
+%============================================================================
+% kodovaní: iso-8859-2 (zmena prikazem iconv, recode nebo cstocs)
+%----------------------------------------------------------------------------
+% zpracování: make, make pdf, make desky, make clean
+% připomínky posílejte na e-mail: bidlom AT fit.vutbr.cz
+% vim: set syntax=tex encoding=latin2:
+%============================================================================
+\documentclass[english,cover]{fitthesis} % odevzdani do wisu - odkazy, na ktere se da klikat
+%\documentclass[cover,print]{fitthesis} % pro tisk - na odkazy se neda klikat
+%\documentclass[english,print]{fitthesis} % pro tisk - na odkazy se neda klikat
+%      \documentclass[english]{fitthesis}
+% * Je-li prace psana v anglickem jazyce, je zapotrebi u tridy pouzit 
+%   parametr english nasledovne:
+%      \documentclass[english]{fitthesis}
+% * Neprejete-li si vysazet na prvni strane dokumentu desky, zruste 
+%   parametr cover
+
+% zde zvolime kodovani, ve kterem je napsan text prace
+% "latin2" pro iso8859-2 nebo "cp1250" pro windows-1250, "utf8" pro "utf-8"
+%\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1, IL2]{fontenc}
+\usepackage{url}
+\usepackage{hyphenat}
+\usepackage{tabularx, booktabs}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+\usepackage{multirow}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{listings}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{tablefootnote}
+\usetikzlibrary{arrows,decorations.markings,positioning,shapes.symbols,shapes.callouts,shapes.geometric,patterns,calc} 
+\tikzset{
+    vertex/.style = {
+        circle,
+        fill            = black,
+        outer sep = 2pt,
+        inner sep = 1pt,
+    }
+}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+\floatstyle{plain}
+\newfloat{listing}{thp}{lop}[chapter]
+\floatname{listing}{Listing}
+
+%zde muzeme vlozit vlastni balicky
+
+
+% =======================================================================
+% balíček "hyperref" vytváří klikací odkazy v pdf, pokud tedy použijeme pdflatex
+% problém je, že balíček hyperref musí být uveden jako poslední, takže nemůže
+% být v šabloně
+\ifWis
+\ifx\pdfoutput\undefined % nejedeme pod pdflatexem
+\else
+  \usepackage{color}
+  \usepackage[unicode,colorlinks,hyperindex,plainpages=false,pdftex]{hyperref}
+  \definecolor{links}{rgb}{0,0,0}
+  \definecolor{anchors}{rgb}{0,0,0}
+  \def\AnchorColor{anchors}
+  \def\LinkColor{links}
+  \def\pdfBorderAttrs{/Border [0 0 0] }  % bez okrajů kolem odkazů
+  \pdfcompresslevel=9
+\fi
+\fi
+
+%Informace o praci/projektu
+%---------------------------------------------------------------------------
+\projectinfo{
+  %Prace
+  project=BP,            %typ prace BP/SP/DP/DR
+  year=2015,             %rok
+  date=\today,           %datum odevzdani
+  %Nazev prace
+  title.cs={Automatizovaná detekce zranitelnosti webových aplikací},  %nazev prace v cestine
+  title.en={Automated Web Application Vulnerability Detection}, %nazev prace v anglictine
+  %Autor
+  author={František Koláček},   %jmeno prijmeni autora
+  %author.title.p=Bc., %titul pred jmenem (nepovinne)
+  %author.title.a=PhD, %titul za jmenem (nepovinne)
+  %Ustav
+  department=UIFS, % doplnte prislusnou zkratku: UPSY/UIFS/UITS/UPGM
+  %Skolitel
+  supervisor=Marek Rychlý, %jmeno prijmeni skolitele
+  supervisor.title.p=RNDr.,   %titul pred jmenem (nepovinne)
+  supervisor.title.a={Ph.D.},    %titul za jmenem (nepovinne)
+  %Klicova slova, abstrakty, prohlaseni a podekovani je mozne definovat 
+  %bud pomoci nasledujicich parametru nebo pomoci vyhrazenych maker (viz dale)
+  %===========================================================================
+  %Klicova slova
+  keywords.cs={web, bezpečnost, detekce zranitelností, revok, wivet, wavsep, jenkins}, %klicova slova v ceskem jazyce
+  keywords.en={web, security, vulnerability detection, revok, wivet, wavsep, jenkins}, %klicova slova v anglickem jazyce
+  %Abstract
+  abstract.cs={Tato práce si dává za cíl analyzovat a porovnat implementaci již existujících open source scannerů webových zranitelností (pomocí nástrojů Wivet a Wavsep) a na základě této analýzy navrhnout a implementovat efektivnější způsob testování jednotlivých skupin útoku do open source scanneru Revok.}, % abstrakt v ceskem jazyce
+  abstract.en={The aim of this thesis is to analyze and compare implementation of already existing open source web application vulnerability scanners (using test suites Wivet and Wavsep) and according to this analysis to propose and implement more effective way of testing each class of vulnerabilities to open source scanner Revok.}, % abstrakt v anglickem jazyce
+  %Prohlaseni
+  declaration={Prohlašuji, že jsem tuto bakalářskou práci vypracoval sám pod vedením RNDr. Marka Rychlého, Ph.D. a s pomocí odborných konzultací od pana Jana Rusnačka, jenž je odborným vedoucím práce za společnost Red Hat Czech, s. r. o.},
+  %Podekovani (nepovinne)
+  acknowledgment={Rád bych poděkoval svému vedoucímu práce RNDr. Marku Rychlému, Ph.D. za odborné vedení, motivaci a cenné rady při řešení této práce a svému technickému vedoucímu práce za společnost RedHat Czech, s. r. o. panu Janu Rusnačkovi za poskytnutí cenných rad a~technických konzultací.}, % nepovinne
+  %extendedabstract={},
+}
+
+%Abstrakt (cesky, anglicky)
+%\abstract[cs]{Do tohoto odstavce bude zapsán výtah (abstrakt) práce v českém jazyce.}
+%\abstract[en]{Do tohoto odstavce bude zapsán výtah (abstrakt) práce v anglickém jazyce.}
+
+%Klicova slova (cesky, anglicky)
+%\keywords[cs]{Sem budou zapsána jednotlivá klíčová slova v českém jazyce, oddělená čárkami.}
+%\keywords[en]{Sem budou zapsána jednotlivá klíčová slova v anglickém jazyce, oddělená čárkami.}
+
+%Prohlaseni
+%\declaration{Prohlašuji, že jsem tuto bakalářskou práci vypracoval samostatně pod vedením pana X...
+%Další informace mi poskytli...
+%Uvedl jsem všechny literární prameny a publikace, ze kterých jsem čerpal.}
+
+%Podekovani (nepovinne)
+%\acknowledgment{V této sekci je možno uvést poděkování vedoucímu práce a těm, kteří poskytli odbornou pomoc
+%(externí zadavatel, konzultant, apod.).}
+
+\extendedabstract{
+Tato práce se zabývá analýzou a porovnáním implementací již existujících \textit{open~source} scannerů webových zranitelností a možnostmi zlepšení hodnocení a efektivity testování \textit{open~source} scanneru Revok.
+
+Úvod práce se zaobírá základními pojmy v oblasti testování bezpečnosti webových aplikací a také projektem OWASP, jež sdružuje bezpečnostní experty z celého světa, vydává odborné publikace a také zastřešuje vývoj nástrojů určných pro testování bezpečnostni webových aplikací. Dále následuje stručný přehled testovaných zranitelností včetně vysvětlení principu jejich zneužití. Testované zranitelnosti jsou \textit{SQL Injection}, \textit{Cross-site scripting}, \textit{Local file inclusion}, \textit{Path traversal} a \textit{Remote file inclusion}.
+
+Pro analýzu, porovnání implementace a efektivity testování jednotlivých scannerů bylo použito testovacích nástrojů WIVET a WAVSEP. Na základě této analýzy bylo navrhnuto několik způsobů, jak zlepšit výsledné hodnocení scanneru Revok v testech, jež jsou obsaženy v nástrojích WIVET a WAVSEP. Součástí analýzy bylo srovnání hodnocení scanneru Revok s 4 nejpoužívanějšími open source scannery (Arachni, w3af, Wapiti a ZAP). 
+
+Jednou z navržených změn bylo vytvoření automatizovaného testovacího prostředí scanneru Revok pomocí nástroje Jenkins pro zjednodušení následného testování aplikovaných změn. Mezi další navrhnuté a implementované změny scanneru Revok patří vylepšení webového crawleru pro lepší hodnocení v testech nástroje Wivet a vylepšení detekce \textit{Local file inclusion} zranitelností v testech nástroje WAVSEP (Revok získal před implementací změn v obou zmiňovaných testech hodnocení 0\%).
+
+Výsledkem této práce je funkční prototyp automatizovaného testovacího prostředí Jenkins obsahující definice pro oba testovací nástroje (WIVET a WAVSEP). Dále byly implementovány a otestovány změny zajištující lepší hodnocení v obou testovacích nástrojích. Veškeré výsledky a implementace byly poskytnuty komunitě scanneru Revok.
+}
+
+\bibliography{literatura} % viz. literatura.bib
+\begin{document}
+  % Vysazeni titulnich stran
+  % ----------------------------------------------
+  \maketitle
+
+  \input{preklad}
+  % Obsah
+  % ----------------------------------------------
+  \tableofcontents
+  
+  % Seznam obrazku a tabulek (pokud prace obsahuje velke mnozstvi obrazku, tak se to hodi)
+  % \listoffigures
+  % \listoftables 
+
+  % Text prace
+  % ----------------------------------------------
+  \input{obsah} % viz. obsah.tex
+
+  % Pouzita literatura
+  % ----------------------------------------------
+  \begin{flushleft}
+  \printbibliography
+  \end{flushleft}
+  \appendix
+  
+  \input{prilohy} % viz. prilohy.tex
+\end{document}

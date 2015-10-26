@@ -1,0 +1,10 @@
+*~
+obj/
+bin/
+*.cbp
+*.depend
+*.o
+client
+server
+proxy
+udtproxy

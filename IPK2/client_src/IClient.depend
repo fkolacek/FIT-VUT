@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1362250496 source:/home/filgy/projects/IPK2/client/IClient.cpp
+	"IClient.h"
+
+1362250464 /home/filgy/projects/IPK2/client/IClient.h
+	<iostream>
+	<string>
+	<vector>
+	"IException.h"
+	"ISocket.h"
+
+1362243896 /home/filgy/projects/IPK2/client/IException.h
+	<string>
+
+1361969862 /home/filgy/projects/IPK2/client/ISocket.h
+	<string>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<netinet/in.h>
+	<netinet/tcp.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<unistd.h>
+	<string.h>
+	<sstream>
+	"IException.h"
+
+1362243900 source:/home/filgy/projects/IPK2/client/IException.cpp
+	"IException.h"
+
+1361969862 source:/home/filgy/projects/IPK2/client/ISocket.cpp
+	"ISocket.h"
+
+1362250457 source:/home/filgy/projects/IPK2/client/main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<stdio.h>
+	"IException.h"
+	"IClient.h"
+

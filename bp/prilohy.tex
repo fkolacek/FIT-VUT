@@ -1,0 +1,268 @@
+\chapter{DVD Contents}\label{app:cd}
+
+The attached DVD contains the source code of the latest stable version of Revok. It contains also scripts used by Jenkins CI tool and job definitions for both Jenkins job in form of XML configuration file. Both testing suites are also included on attached DVD in form of GIT repository.
+
+\section{Content of the DVD}
+
+			\begin{itemize}
+				\item \textit{bp-jenkins-scripts/} (Jenkins scripts used in Jobs)
+				\item \textit{bp-revok/} (GIT repository containing scanner Revok)
+				\item \textit{bp-wivet/} (GIT repository containing WIVET test suite)
+				\item \textit{bp-wavsep/} (GIT repository containing WAVSEP test suite)
+				\item \textit{patches/} (All changes stored in form of patches)				
+			\end{itemize}
+
+\chapter{Installation and Usage}\label{app:installation-and-usage}
+
+In this chapter are described steps needed to perform the for basic installation and usage of each tool used in this thesis.
+
+	\section{WIVET}\label{app:installation-of-wivet}
+
+	For installation of your local \texttt{WIVET} you should follow this steps:
+	
+	\begin{enumerate}
+		\item \texttt{\# yum install -y php httpd git}
+		\item \texttt{\# git clone https://github.com/fkolacek/bp-wivet.git /var/www/html/wivet}
+		\item \texttt{\# restorecon -Rv /var/www/html/}
+		\item \texttt{\# chown -R apache:apache /var/www/html/wivet}
+		\item \texttt{\# systemctl start httpd}				
+	\end{enumerate}
+	
+	After performing these steps your WIVET instance should be accessible via address: \textit{http://localhost/wivet} .
+
+	\section{WAVSEP}\label{app:installation-of-wavsep}
+
+	For installation of your local \texttt{WIVET} you should follow this steps:
+	
+	\begin{enumerate}
+		\item \texttt{\# yum install -y tomcat git java-1.8.0-openjdk}
+		\item \texttt{\# git clone https://github.com/fkolacek/bp-wavsep.git /var/lib/tomcat/webapps/}
+		\item \texttt{\# restorecon -Rv /var/lib/tomcat/webapps/}
+		\item \texttt{\# chown -R tomcat:tomcat /var/www/html/wivet}
+		\item \texttt{\# systemctl start tomcat}				
+	\end{enumerate}
+	
+	After performing these steps your WAVSEP instance should be accessible via address: \textit{http://localhost:8080/wavsep} .
+	
+	\section{Revok}\label{app:installation-of-revok}
+	
+	For installation of your local \texttt{Revok} instance you will have to install following dependencies and perform some post installation tasks:
+
+			\begin{enumerate}
+				\item \texttt{\# yum install -y tcl java-1.8.0-openjdk readlink git}
+				\item \texttt{\$ git clone https://github.com/fkolacek/bp-revok.git}
+				\item \texttt{\$ cd bp-revok}				
+				\item \texttt{\$ ./revokd init}	
+				\item \texttt{\$ ./revokd start}	
+			\end{enumerate}
+			
+	After performing these steps your Revok instance should be accessible via address: \textit{http://localhost:3030} .
+	
+	\section{Arachni}\label{app:installation-of-arachni}
+	
+	For installation of your local \texttt{Arachni} instance you will have to install following dependencies and perform some post installation tasks:
+	
+			\begin{enumerate}
+				\item \texttt{\# yum install -y wget}
+				\item \texttt{\$ wget http://downloads.arachni-scanner.com/arachni-1.1-0.5.7-linux-x86\_64.tar.gz}
+				\item \texttt{\$ tar xvzf arachni-1.1-0.5.7-linux-x86\_64.tar.gz}				
+				\item \texttt{\$ cd cd arachni-1.1-0.5.7}	
+				\item \texttt{\$ bin/arachni\_web }	
+			\end{enumerate}
+			
+	After performing these steps your Arachni instance should be accessible via address: \textit{http://localhost:9292} .
+	
+	\section{w3af}\label{app:installation-of-w3af}
+	
+	For installation of your local \texttt{w3af} instance you will have to install following dependencies and perform some post installation tasks:
+	
+			\begin{enumerate}
+				\item \texttt{\# yum install -y  git}
+				\item \texttt{\$ git clone --depth 1 https://github.com/andresriancho/w3af.git}
+				\item \texttt{\$ cd w3af}				
+				\item \texttt{\$ ./w3af\_gui}	
+			\end{enumerate}
+	
+	\section{Wapiti}\label{app:installation-of-wapiti}
+	
+	For installation of your local \texttt{Wapiti} instance you will have to install following dependencies and perform some post installation tasks:
+	
+			\begin{enumerate}
+		\item \texttt{\# yum install -y wget}
+		\item \texttt{\$ wget http://heanet.dl.sourceforge.net/project/wapiti/wapiti/wapiti-2.3.0/wapiti-2.3.0-1.noarch.rpm }
+		\item \texttt{\# yum localinstall -y wapiti-2.3.0-1.noarch.rpm}				
+		\item \texttt{\$ wapiti}	
+			\end{enumerate}
+	
+	\section{ZAP}\label{app:installation-of-zap}
+	
+	For installation of your local \texttt{ZAP} instance you will have to install following dependencies and perform some post installation tasks:
+	
+			\begin{enumerate}
+				\item \texttt{\# yum install -y wget}
+				\item \texttt{\$ wget http://freefr.dl.sourceforge.net/project/zaproxy/2.4.0/ZAP\_2.4.0\_Linux.tar.gz}
+				\item \texttt{\$ tar xvfz ZAP\_2.4.0\_Linux.tar.gz}
+				\item \texttt{\$ ZAP\_2.4.0/zap.sh}
+			\end{enumerate}
+	
+\chapter{Detailed results}\label{app:detailedResults}
+
+	\section{WIVET detailed results}\label{app:detailedResultsWIVET}
+	
+	In this section you can find more detailed results of testing scanners' ability to use various attack vectors.
+
+	\bgroup
+	\def\arraystretch{1.2}
+	\rowcolors{1}{}{lightgray}
+	\begin {longtable}{| p{.50\textwidth} ccccc |}
+	%\begin {longtable}[H]	
+	%\begin{center}
+	%\begin{tabular}{| l | l | l | l | l | l}
+    \hline
+	Attack vector	& Arachni	& Revok & w3af	& Wapiti	& ZAP \\ \hline
+
+%
+self referencing link										& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+self referencing link with random query string				& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+iframe														& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+302 redirection												& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+html encoded links											& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+protocol relative links										& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+link creation after button click							& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+link href js protocol										& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+div onmouseover window.open									& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+form submit thru select onchange w/ simple alert			& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+form submit button onclick									& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+td onclick window.location.href								& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+link href js protocol window.location w/ alert override		& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+td onmouseout window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+td onmousedown window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+link href jquery											& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+td onmouseup window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+frame created dynamically									& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+iframe created dynamically									& \cmark	& \xmark	& \cmark	& \cmark	& \cmark \\
+a href javascript protocol window.open						& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+tr onclick window.location.href								& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+xhr initiating												& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+link created thru xhr response								& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+tr onmouseout window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+tr onmousedown window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+tr onmouseup window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+form action with javascript protocol set					& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+span onclick window.location								& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+span onmouseout window.location.href						& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+span onmousedown document.location.href						& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+xhr with a busy mode page 1									& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+span onmouseup document.location							& \cmark	& \xmark	& \xmark	& \cmark	& \cmark \\
+heavy js library standard form creation						& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+div onclick window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+div onmouseout window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+div onmousedown window.location.href						& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+div onmouseup window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+li onclick window.location.href								& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+li onmouseout window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \cmark \\
+link creation after some time w/ setTimeout					& \cmark	& \xmark	& \xmark	& \cmark	& \xmark \\
+multi-page form with a single path to final destination		& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+link in html comment										& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+relative link in html comment								& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+p onclick window.location.href								& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+p onmouseout window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+p onmousedown window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+p onmouseup window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+li onmousedown window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+li onmouseup window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+radio onclick window.location.href							& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+unattached js function document.location					& \cmark	& \xmark	& \xmark	& \cmark	& \xmark \\
+meta refresh tag											& \cmark	& \xmark	& \xmark	& \cmark	& \xmark \\
+302 redirection link in response body						& \cmark	& \xmark	& \cmark	& \cmark	& \xmark \\
+xhr with a busy mode page 2									& \cmark	& \xmark	& \xmark	& \xmark	& \xmark \\
+link attached to a swf simple button onclick event			& \xmark	& \xmark	& \xmark	& \cmark	& \xmark \\
+link attached to a swf simple button parameterized onclick event	& \xmark	& \xmark	& \xmark	& \xmark	& \xmark \\ \hline
+%	
+total coverage:												& 96\%		& 0\%		& 16\%		& 44\%		& 69\%	\\ \hline
+
+%	\label{tab:resultsWivet} 	
+	\caption{WIVET results}\label{tab:extended}
+	%\end{center}
+	\end {longtable}
+	\egroup
+
+
+\section{WIVET detailed results after modification}\label{app:detailedResultsWIVET2}
+	
+	In this section you can find more detailed results of Revok's ability to use various attack vectors with all patches applied.
+
+	\bgroup
+	\def\arraystretch{1.2}
+	\rowcolors{1}{}{lightgray}
+	\begin {longtable}{| p{.50\textwidth} c |}
+	%\begin {longtable}[H]	
+	%\begin{center}
+	%\begin{tabular}{| l | l | l | l | l | l}
+    \hline
+	Attack vector	& Revok \\ \hline
+
+%
+self referencing link										& \cmark \\
+self referencing link with random query string				& \cmark \\
+iframe														& \cmark \\
+302 redirection												& \cmark \\
+html encoded links											& \cmark \\
+protocol relative links										& \cmark \\
+link creation after button click							& \xmark \\
+link href js protocol										& \xmark \\
+div onmouseover window.open									& \cmark \\
+form submit thru select onchange w/ simple alert			& \xmark \\
+form submit button onclick									& \cmark \\
+td onclick window.location.href								& \xmark \\
+link href js protocol window.location w/ alert override		& \xmark \\
+td onmouseout window.location.href							& \xmark \\
+td onmousedown window.location.href							& \xmark \\
+link href jquery											& \cmark \\
+td onmouseup window.location.href							& \xmark \\
+frame created dynamically									& \cmark \\
+iframe created dynamically									& \cmark \\
+a href javascript protocol window.open						& \xmark \\
+tr onclick window.location.href								& \xmark \\
+xhr initiating												& \cmark \\
+link created thru xhr response								& \xmark \\
+tr onmouseout window.location.href							& \xmark \\
+tr onmousedown window.location.href							& \xmark \\
+tr onmouseup window.location.href							& \xmark \\
+form action with javascript protocol set					& \xmark \\
+span onclick window.location								& \xmark \\
+span onmouseout window.location.href						& \xmark \\
+span onmousedown document.location.href						& \cmark \\
+xhr with a busy mode page 1									& \xmark \\
+span onmouseup document.location							& \xmark \\
+heavy js library standard form creation						& \xmark \\
+div onclick window.location.href							& \xmark \\
+div onmouseout window.location.href							& \cmark \\
+div onmousedown window.location.href						& \xmark \\
+div onmouseup window.location.href							& \xmark \\
+li onclick window.location.href								& \xmark \\
+li onmouseout window.location.href							& \cmark \\
+link creation after some time w/ setTimeout					& \xmark \\
+multi-page form with a single path to final destination		& \xmark \\
+link in html comment										& \xmark \\
+relative link in html comment								& \xmark \\
+p onclick window.location.href								& \xmark \\
+p onmouseout window.location.href							& \xmark \\
+p onmousedown window.location.href							& \xmark \\
+p onmouseup window.location.href							& \xmark \\
+li onmousedown window.location.href							& \xmark \\
+li onmouseup window.location.href							& \xmark \\
+radio onclick window.location.href							& \xmark \\
+unattached js function document.location					& \xmark \\
+meta refresh tag											& \cmark \\
+302 redirection link in response body						& \xmark \\
+xhr with a busy mode page 2									& \xmark \\
+link attached to a swf simple button onclick event			& \xmark \\
+link attached to a swf simple button parameterized onclick event	& \xmark 	\\ 
+\hline
+%
+total coverage:												& 30\%	\\ \hline
+
+	\caption{WIVET results with all patches applied}\label{tab:extended2}
+	\end {longtable}
+	\egroup

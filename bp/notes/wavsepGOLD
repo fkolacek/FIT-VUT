@@ -1,0 +1,21 @@
+[root@master bp-revok]# nc -l 8443
+ok
+c^C
+[root@master bp-revok]# nc -l 8443
+PUT /scans HTTP/1.1
+Accept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+Accept: */*
+User-Agent: Ruby
+Authorization: Basic cmV2b2s6cGFzc3dvcmQ=
+Connection: close
+Host: 127.0.0.1:8443
+Content-Length: 465
+Content-Type: application/x-www-form-urlencoded
+
+{"id":"12383d6c-c444-41bb-9bef-d225a06a4969","modules":["all"],"target_info":"eyJ0YXJnZXQiOiJodHRwOi8vMTAuMC4wLjQxL3dpdmV0LyIsImxvZ2luIjoiIiwibG9naW5fYnV0dG9uIjp0cnVlLCJsb2d0eXBlIjoibm9uZSIsInBvc2l0aW9ucyI6eyJ1c2VybmFtZSI6eyJ4IjotMjA2LCJ5IjotMjA2fSwicGFzc3dvcmQiOnsieCI6LTIwNiwieSI6LTIwNn0sImJ1dHRvbiI6eyJ4IjotMjA2LCJ5IjotMjA2fX0sInVzZXJuYW1lIjoiIiwicGFzc3dvcmQiOiIiLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJtb2R1bGVzIjpbImFsbCJdLCJ3aGl0ZWxpc3QiOlsiMTAuMC4wLjQxIl19"}
+
+DATA:
+eyJ0YXJnZXQiOiJodHRwOi8vMTAuMC4wLjQxL3dpdmV0LyIsImxvZ2luIjoiIiwibG9naW5fYnV0dG9uIjp0cnVlLCJsb2d0eXBlIjoibm9uZSIsInBvc2l0aW9ucyI6eyJ1c2VybmFtZSI6eyJ4IjotMjA2LCJ5IjotMjA2fSwicGFzc3dvcmQiOnsieCI6LTIwNiwieSI6LTIwNn0sImJ1dHRvbiI6eyJ4IjotMjA2LCJ5IjotMjA2fX0sInVzZXJuYW1lIjoiIiwicGFzc3dvcmQiOiIiLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJtb2R1bGVzIjpbImFsbCJdLCJ3aGl0ZWxpc3QiOlsiMTAuMC4wLjQxIl19
+
+BASE64 ENCODED:
+{"target":"http://10.0.0.41/wivet/","login":"","login_button":true,"logtype":"none","positions":{"username":{"x":-206,"y":-206},"password":{"x":-206,"y":-206},"button":{"x":-206,"y":-206}},"username":"","password":"","email":"test@example.com","modules":["all"],"whitelist":["10.0.0.41"]}
