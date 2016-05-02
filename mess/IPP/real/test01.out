@@ -1,0 +1,14 @@
+usage: xtd.py [--input INPUT] [--output OUTPUT] [--header HEADER] [--etc ETC]
+              [--help] [-a] [-b] [-g]
+
+XML2DDL - xkolac12@stud.fit.vutbr.cz
+
+optional arguments:
+  --input INPUT    Set input file
+  --output OUTPUT  Set output file
+  --header HEADER  Set custom header
+  --etc ETC        Set max column count
+  --help, -h       Show this help
+  -a
+  -b
+  -g

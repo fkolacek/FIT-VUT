@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+  <title> ITU ajax </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+	*{margin: 0; padding: 0; border: 0; }
+	
+	div, input, label { xmargin: 10px; }
+	
+	input{ border: 1px solid #CCCCCC; padding: 2px;}
+	label{ font-weight: bold; }
+  
+  .comment{ height: 20px; margin: 0; }
+	.date{ color: #4D4D4D; }
+	.author{ font-weight: bold; cursor: hand; cursor: pointer; }
+	.message{}
+	
+	#newMessageString{ width: 200px;}
+  </style>
+</head>
+<body>
+
+<div id="status" style="border: solid #aaa 1px; ">&nbsp;</div> 
+
+<div id="chatArea" style="float: left; width: 50%; height: 300px; border-bottom: solid #aaa 1px; overflow:auto;"></div> 
+<div id="rawChatArea" style="float: right; width: 50%; height: 300px; border-bottom: solid #aaa 1px; overflow:auto;"></div> 
+
+<div style="clear: both; "></div>
+<form onsubmit="return uploadData()" style="margin: 5px;">
+  <label for="newMessageString">Message: </label><input type="text" id="newMessageString" />
+  <input type="submit" value="send" xonclick="uploadData()" />
+</form>
+
+
+
+<script type="text/javascript">
+	var rows = 0;
+	var lastRows = 0;
+	var lastID = 0;
+	var last = false;
+
+/***
+  * XMLHttpRequest object constructor (for compatibility with various browsers)
+  */
+
+function createXmlHttpRequestObject() {
+  var xmlhttp;
+  try {
+    xmlHttp = new XMLHttpRequest(); //should work on all browsers except IE6 or older
+  } catch (e) { 
+    try {
+      xmlHttp = new ActiveXObject("Microsoft.XMLHttp"); //browser is IE6 or older
+    } catch (e) {
+      // ignore error
+    }
+  }
+  if (!xmlHttp) {
+    alert ("Error creating the XMLHttpRequest object.");
+  } else {
+    return xmlHttp;
+  }
+}
+
+function uploadData() {
+  document.getElementById("status").innerHTML = "uploadData()";
+
+  try {
+    var xmlHttp = createXmlHttpRequestObject();//stores XMLHttpRequestObject
+		
+	if(document.getElementById("newMessageString").value == "")
+		return false;
+
+	document.getElementById("status").innerHTML = "Status: sending..";
+
+    var params = "data=" + document.getElementById("newMessageString").value;
+	xmlHttp.open("POST", "api.php" , true);
+	xmlHttp.setRequestHeader("Http-Referer", "xkolac12;");
+	xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+	xmlHttp.setRequestHeader("Content-length", params.length);
+	xmlHttp.setRequestHeader("Connection", "close");
+	xmlHttp.onreadystatechange = dataUploaded;
+	xmlHttp.send(params);
+
+  } catch (e) {
+    alert(e.toString());
+  }
+
+  return false; // to avoid default form submit behavior 
+}
+
+function dataUploaded(){
+	document.getElementById("newMessageString").value = "";
+	document.getElementById("status").innerHTML = "Status: sended";
+	downloadData();
+}
+
+function downloadData() {
+	document.getElementById("status").innerHTML = "Status: loading..";
+	
+	var xmlHttp = createXmlHttpRequestObject();
+	xmlHttp.open("GET", "api.php", true);
+	xmlHttp.onreadystatechange = dataReceived;
+	xmlHttp.send(null);
+}
+
+function dataReceived(){
+	if(xmlHttp.readyState == 4 && xmlHttp.status == 200){	
+		var responseRaw = xmlHttp.responseText;
+		//alert(responseRaw);
+		var response = eval("(" + responseRaw + ")");
+		
+		document.getElementById("rawChatArea").innerHTML = responseRaw;	
+		var content = document.getElementById("chatArea").innerHTML;
+		
+		last = false;
+		lastRows = rows;
+			
+		for(var i in response){
+			if(lastID == 0)
+				last = true;
+			else if(lastID == response[i]['id']){
+				last = true;
+				continue;
+			}
+			
+			if(!last)
+				continue;
+			
+			content = content 
+					+ "<div class=\"comment\">"
+					+ "<span class=\"date\">[" + response[i]['dts'] + "]</span> "
+					+ "<span class=\"author\" onclick=\"document.getElementById('newMessageString').value='" + response[i]['login'] + "> ';\">" + response[i]['login'] + "</span>: "
+					+ "<span class=\"message\">" + response[i]['cnt'] + "</span>"
+					
+					
+					+ "</div>";
+					
+			if(response[i]['cnt'] == "ping"){
+				document.getElementById("newMessageString").value = response[i]['login'] + "> pong";
+				uploadData();
+			}
+					
+			lastID = response[i]['id'];
+			rows++;
+		}
+		
+		var chatArea = document.getElementById('chatArea');
+		
+		chatArea.innerHTML = content;
+		chatArea.scrollTop = rows * 20;
+		
+		document.getElementById("status").innerHTML = "Status: ready (" + (rows - lastRows) + " new)";
+	}
+}
+
+setInterval("downloadData()", 3 * 1000);
+
+downloadData();
+</script>
+
+</html>

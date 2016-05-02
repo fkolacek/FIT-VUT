@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDialogHelp</class>
+ <widget class="QDialog" name="QDialogHelp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>383</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>350</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Waree</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Labyrinth2015 v0.91</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>350</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>This is the implementation of desk game Labyrinth. This program is developed in C++ programing language using Qt toolkit for creating GUI.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>350</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Author: Frantisek Kolacek &lt;xkolac12@stud.fit.vutbr.cz&gt; Date: 7.5.2015</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>180</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>pressed()</signal>
+   <receiver>QDialogHelp</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

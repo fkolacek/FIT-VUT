@@ -1,0 +1,22 @@
+<ipk-projekt-3>
+<autor>
+Petr Matyáš
+</autor>
+<login>
+xmatya03@stud.fit.vutbr.cz
+</login>
+<datum>
+28.04.2013
+</datum>
+<soubory>
+<soubor jmeno="Makefile" autor="Petr Matyáš" />
+<soubor jmeno="client.cpp" autor="Petr Matyáš"/>
+<soubor jmeno="server.cpp" autor="Petr Matyáš"/>
+<soubor jmeno="udt.h" autor="Petr Matyáš" />
+<soubor jmeno="udt.cpp" autor="Petr Matyáš" />
+</soubory>
+<protokol>
+TOHLE UPRAV!
+Spolehlivý protokol je implementován dle zadání jako protokol s kumulativním potvrzováním. Protokol využívá pro spolehlivý přenos plovoucí okno, jehož velikost se v průběhu přenosu podle úspěšnosti přenosu těchto segmentů mění. Jednotlivé segmenty jsou číslované od 1. Pro ukončení přenosu po úspěšném přenesení těchto segmentů se využívá segment s číslem 0.
+</protokol>
+</ipk-projekt-3>

@@ -1,0 +1,595 @@
+/**
+ * @file	readerWriter.c
+ * @brief   Ctenar - pisar (projekt c. 2, predmet IOS)
+ *
+ *
+ *
+ * @date	2012/04/14
+ * @author	Frantisek Kolacek, xkolac12@stud.fit.vutbr.cz
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <ctype.h>
+#include <signal.h>
+#include <string.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <semaphore.h>
+
+/*
+ *  @info Enumeration of error codes
+ */
+enum errorCodes{
+    E_OK = 0,
+    E_PARAM,
+    E_OUTPUT,
+    E_FORK,
+    E_ABORT,
+
+    E_SHM_FTOK = 10,
+    E_SHM_GET,
+    E_SHM_AT,
+    E_SHM_DT,
+    E_SHM_CTL
+
+};
+
+const char* ERROR_MESSAGES[] = {
+    [E_PARAM]   = "Invalid parametres",
+    [E_OUTPUT]  = "Cannot set output",
+    [E_FORK]    = "Cannot fork",
+    [E_ABORT]   = "Aborting..",
+
+    [E_SHM_FTOK]    = "Failed function ftok",
+    [E_SHM_GET]     = "Failed function shmget",
+    [E_SHM_AT]      = "Failed function shmat",
+    [E_SHM_DT]      = "Failed function shmdt",
+    [E_SHM_CTL]     = "Failed function shmctl"
+};
+
+/*
+ *  @info Structure for storage parametres
+ */
+typedef struct params{
+    int error;
+
+    int writers;
+    int readers;
+    int cycles;
+
+    int intervalWriters;
+    int intervalReaders;
+
+    char* outputFile;
+} PARAMS;
+
+/*
+ *  @info Structure for storage pointers to shared memmory
+ */
+typedef struct resources{
+    int error;
+
+    FILE* output;
+
+    int shmId;
+    int* actionCounter;
+    int* workSpace;
+
+    int* activeWriters;
+    int* activeReaders;
+
+    int shmSemId;
+    sem_t* lockWrite;
+    sem_t* lockRead;
+    sem_t* lockActiveWriters;
+    sem_t* lockActiveReaders;
+    sem_t* lockAtomic;
+    sem_t* lockOutput;
+
+} RESOURCES;
+
+RESOURCES RESOURCE = {
+    .error = E_OK,
+
+    .output = NULL,
+
+    .shmId = -1,
+    .actionCounter = NULL,
+    .workSpace = NULL,
+    .activeWriters = NULL,
+    .activeReaders = NULL,
+
+    .shmSemId = -1,
+    .lockWrite = NULL,
+    .lockRead = NULL,
+    .lockActiveWriters = NULL,
+    .lockActiveReaders = NULL,
+    .lockAtomic = NULL
+};
+
+/*
+ *  @info load parametres from command line
+ *  @param int - count of parametres
+ *  @param char*[] - array of parametres
+ *  @return PARAMS - structure of parametres
+ */
+PARAMS loadParams(int, char*[]);
+
+/*
+ *  @info load and map resources
+ *  @param PARAMS
+ */
+void loadResources(PARAMS);
+
+/*
+ *  @info free all loaded and mapped resources
+ */
+void freeResources();
+
+/*
+ *  @info
+ */
+void processWriter(int, PARAMS);
+
+/*
+ *  @info
+ */
+void processReader(int, PARAMS);
+
+void programAbort(int);
+
+/*
+ *  @info
+ */
+void printError(int);
+
+void printStatus(char*, ...);
+
+int main(int argc, char* argv[]){
+    //signal handling
+    signal(SIGTERM, programAbort);
+    signal(SIGINT, programAbort);
+
+    //loading paramsERROR_MESSAGES
+    PARAMS param = loadParams(argc, argv);
+
+    if(param.error != E_OK){
+        printError(param.error);
+        return param.error;
+    }
+
+    //loading resources
+    loadResources(param);
+
+    if(RESOURCE.error != E_OK){
+        printError(RESOURCE.error);
+        freeResources();
+
+        return RESOURCE.error;
+    }
+
+    //set random seed
+    srand(time(NULL));
+
+    int iterator;
+    pid_t processId = -1;
+    pid_t readers[param.readers];
+    pid_t writers[param.writers];
+
+    //Creating writers
+    for(iterator = 0; iterator < param.writers; iterator++){
+        //printStatus("#M creating writer: %d\n", iterator+1);
+
+        processId = fork();
+
+        //Fork error
+        if(processId == -1){
+            printError(E_FORK);
+
+            //Kill all remaining children
+            for(int i = 0; i < iterator; i++)
+                kill(writers[i], SIGTERM);
+
+            //Wait for them
+            for(int i = 0; i < iterator; i++)
+                waitpid(writers[i], NULL, 0);
+
+            //programAbort(SIGTERM);
+            freeResources();
+
+            return E_FORK;
+        }
+        //Created writer
+        else if(processId == 0) processWriter(iterator+1, param);
+        //Main process
+        else writers[iterator] = processId;
+    }
+
+    //Creating readers
+    for(iterator = 0; iterator < param.readers; iterator++){
+        //printStatus("#M creating reader: %d\n", iterator+1);
+
+        processId = fork();
+
+        //Fork error
+        if(processId == -1){
+            printError(E_FORK);
+
+            //Kill all remaining children
+            for(int i = 0; i < param.writers; i++)
+                kill(writers[i], SIGTERM);
+
+            for(int i = 0; i < iterator; i++)
+                kill(readers[i], SIGTERM);
+
+            //Wait for them
+            for(int i = 0; i < param.writers; i++)
+                waitpid(writers[i], NULL, 0);
+
+            for(int i = 0; i < iterator; i++)
+                waitpid(readers[i], NULL, 0);
+
+            //programAbort(SIGTERM);
+            freeResources();
+
+            return E_FORK;
+        }
+        //Created reader
+        else if(processId == 0) processReader(iterator+1, param);
+        //Main process
+        else readers[iterator] = processId;
+    }
+
+    //All children successfully created!
+
+    //Waiting for all writers
+    for(iterator = 0; iterator < param.writers; iterator++)
+        waitpid(writers[iterator], NULL, 0);
+
+    //LOCK
+    sem_wait(RESOURCE.lockRead);
+        //printStatus("#M Setted 0 to workSpace\n");
+        *(RESOURCE.workSpace) = 0;
+    sem_post(RESOURCE.lockRead);
+    //UNLOCK
+
+    //Waiting for all readers
+    for(iterator = 0; iterator < param.readers; iterator++)
+        waitpid(readers[iterator], NULL, 0);
+
+    //Free all loaded resources
+    freeResources();
+
+    return RESOURCE.error;
+}
+
+PARAMS loadParams(int argc, char* argv[]){
+    PARAMS param = { .error = E_OK};
+    char* endPointer = NULL;
+
+    if(argc == 7){
+        //Parse writers
+        if(isdigit(*argv[1]))
+            param.writers = strtoul(argv[1], &endPointer, 10);
+        else
+            param.error = E_PARAM;
+
+        //Parse readers
+        if(isdigit(*argv[2]))
+            param.readers = strtoul(argv[2], &endPointer, 10);
+        else
+            param.error = E_PARAM;
+
+        //Parse cycles
+        if(isdigit(*argv[3]))
+            param.cycles = strtoul(argv[3], &endPointer, 10);
+        else
+            param.error = E_PARAM;
+
+        //Parse intervalWriters
+        if(isdigit(*argv[4]))
+            param.intervalWriters = strtoul(argv[4], &endPointer, 10);
+        else
+            param.error = E_PARAM;
+
+        //Parse intervalReaders
+        if(isdigit(*argv[5]))
+            param.intervalReaders = strtoul(argv[5], &endPointer, 10);
+        else
+            param.error = E_PARAM;
+
+        //Setting output file name
+        param.outputFile = argv[6];
+    }
+    else
+        param.error = E_PARAM;
+
+    if(param.readers < 0 || param.writers < 0 || param.cycles < 0 || param.intervalWriters < 0 || param.intervalReaders < 0)
+        param.error = E_PARAM;
+
+    return param;
+}
+
+void loadResources(PARAMS param){
+    //Loading output
+
+    //Stdout
+    if(strcmp(param.outputFile, "-") == 0)
+        RESOURCE.output = stdout;
+    //Regular file
+    else{
+        RESOURCE.output = fopen(param.outputFile, "w");
+
+        if(!RESOURCE.output){
+            RESOURCE.error = E_OUTPUT;
+            return;
+        }
+
+        setbuf(RESOURCE.output, NULL);
+    }
+
+	//Generate unique key
+	//Answer to the Ultimate Question of Life, the Universe, and Everything
+	key_t key = ftok(getenv("HOME"), 42);
+	key_t keySem = ftok(getenv("HOME"), 24);
+
+	if(key == -1 || keySem == -1){ RESOURCE.error = E_SHM_FTOK; return; }
+
+    //Get ID of shared memmory
+	RESOURCE.shmId = shmget(key, 4 * sizeof(int), IPC_CREAT | 0660);
+	RESOURCE.shmSemId = shmget(keySem, 6 * sizeof(sem_t), IPC_CREAT | 0660);
+
+    //Shmget failed - cannot get share memmory id
+    if(RESOURCE.shmId < 0 || RESOURCE.shmSemId < 0){ RESOURCE.error = E_SHM_GET; return; }
+
+    //Attach shared memmory
+    RESOURCE.workSpace = shmat(RESOURCE.shmId, NULL, 0);
+    RESOURCE.lockWrite = shmat(RESOURCE.shmSemId, NULL, 0);
+
+    //Shmat failed - cannot atach shared memmory
+    if( (RESOURCE.workSpace == (void*)-1) || (RESOURCE.lockWrite == (void*)-1) ){
+        RESOURCE.workSpace = NULL;
+        RESOURCE.lockWrite = NULL;
+
+        //Free shared memmory
+        if(shmctl(RESOURCE.shmId, IPC_RMID, NULL) || shmctl(RESOURCE.shmSemId, IPC_RMID, NULL)){
+            RESOURCE.error = E_SHM_CTL;
+            return;
+        }
+
+        RESOURCE.shmId = -1;
+        RESOURCE.shmSemId = -1;
+        RESOURCE.error = E_SHM_AT;
+
+        return;
+    }
+
+    //Attach shared actionCounter, activeWriters, activeReaders
+    RESOURCE.actionCounter = RESOURCE.workSpace + sizeof(int);
+    RESOURCE.activeWriters = RESOURCE.workSpace + (2 * sizeof(int));
+    RESOURCE.activeReaders = RESOURCE.workSpace + (3 * sizeof(int));
+
+    //Attach shared lockRead, lockActiveWriters, lockActiveReaders
+    RESOURCE.lockRead = RESOURCE.lockWrite + sizeof(sem_t);
+    RESOURCE.lockActiveWriters = RESOURCE.lockWrite + (2 * sizeof(sem_t));
+    RESOURCE.lockActiveReaders = RESOURCE.lockWrite + (3 * sizeof(sem_t));
+    RESOURCE.lockAtomic = RESOURCE.lockWrite + (4 * sizeof(sem_t));
+    RESOURCE.lockOutput = RESOURCE.lockWrite + (5 * sizeof(sem_t));
+
+    //Set default value of workSpace, actionCounter, activeWriters/activeReaders
+    *(RESOURCE.workSpace) = -1;
+    *(RESOURCE.actionCounter) = 1;
+    *(RESOURCE.activeWriters) = 0;
+    *(RESOURCE.activeReaders) = 0;
+
+    //Init semaphores
+    sem_init(RESOURCE.lockWrite, 1, 1);
+    sem_init(RESOURCE.lockRead, 1, 1);
+    sem_init(RESOURCE.lockActiveWriters, 1, 1);
+    sem_init(RESOURCE.lockActiveReaders, 1, 1);
+    sem_init(RESOURCE.lockAtomic, 1, 1);
+    sem_init(RESOURCE.lockOutput, 1, 1);
+}
+
+void freeResources(){
+    //Free output
+    if(RESOURCE.output && RESOURCE.output != stdout){
+        fclose(RESOURCE.output);
+
+        RESOURCE.output = NULL;
+    }
+
+    //Free shared memmory
+    if(RESOURCE.workSpace){
+        if(shmdt(RESOURCE.workSpace))
+            RESOURCE.error = E_SHM_DT;
+
+        if(shmctl(RESOURCE.shmId, IPC_RMID, NULL))
+            RESOURCE.error = E_SHM_CTL;
+
+        RESOURCE.shmId = -1;
+        RESOURCE.workSpace = NULL;
+        RESOURCE.actionCounter = NULL;
+        RESOURCE.activeWriters = NULL;
+        RESOURCE.activeReaders = NULL;
+    }
+
+    if(RESOURCE.lockWrite){
+        sem_destroy(RESOURCE.lockWrite);
+        sem_destroy(RESOURCE.lockRead);
+        sem_destroy(RESOURCE.lockActiveWriters);
+        sem_destroy(RESOURCE.lockActiveReaders);
+        sem_destroy(RESOURCE.lockAtomic);
+        sem_destroy(RESOURCE.lockOutput);
+
+        if(shmdt(RESOURCE.lockWrite))
+            RESOURCE.error = E_SHM_DT;
+
+        if(shmctl(RESOURCE.shmSemId, IPC_RMID, NULL))
+            RESOURCE.error = E_SHM_CTL;
+
+        RESOURCE.shmSemId = -1;
+        RESOURCE.lockWrite = NULL;
+        RESOURCE.lockRead = NULL;
+        RESOURCE.lockActiveWriters = NULL;
+        RESOURCE.lockActiveReaders = NULL;
+        RESOURCE.lockAtomic = NULL;
+        RESOURCE.lockOutput = NULL;
+
+    }
+
+}
+
+void processWriter(int id, PARAMS param){
+    //printStatus("#W: %d ready\n", id);
+
+    int interval;
+    for(int i = 0; i < param.cycles; i++){
+        interval = ((param.intervalWriters == 0)? 0 : (rand()%(param.intervalWriters + 1)));
+
+        sem_wait(RESOURCE.lockActiveWriters);
+            (*RESOURCE.activeWriters)++;
+
+            //printStatus("\x1b[31;1mA: writer: %d: new value\x1b[0m\n", id);
+            printStatus("writer: %d: new value\n", id);
+            usleep(interval * 1000);
+            //printStatus("\x1b[31;1mA: writer: %d: ready\x1b[0m\n", id);
+            printStatus("writer: %d: ready\n", id);
+
+            if(*(RESOURCE.activeWriters) == 1)
+                sem_wait(RESOURCE.lockRead);
+
+        sem_post(RESOURCE.lockActiveWriters);
+
+        //Lock writing
+        sem_wait(RESOURCE.lockWrite);
+
+            //printStatus("\x1b[31;1mA: writer: %d: writes a value\x1b[0m\n", id);
+            printStatus("writer: %d: writes a value\n", id);
+            *(RESOURCE.workSpace) = id;
+            //printStatus("\x1b[31;1mA: writer: %d: written\x1b[0m\n", id);
+            printStatus("writer: %d: written\n", id);
+
+        sem_post(RESOURCE.lockWrite);
+        //Unlock writing
+
+        //Lock
+        sem_wait(RESOURCE.lockActiveWriters);
+            (*RESOURCE.activeWriters)--;
+
+            if(*(RESOURCE.activeWriters) == 0)
+                sem_post(RESOURCE.lockRead);
+
+        sem_post(RESOURCE.lockActiveWriters);
+        //Unlock
+
+    }
+
+    //_exit(0);
+    //freeResources();
+    exit(0);
+}
+
+void processReader(int id, PARAMS param){
+    //printStatus("#R: %d ready\n", id);
+
+    int interval, readed;
+    while(1){
+
+
+        //Lock
+        sem_wait(RESOURCE.lockAtomic);
+            //Lock
+            sem_wait(RESOURCE.lockRead);
+                //Lock
+                sem_wait(RESOURCE.lockActiveReaders);
+                    (*RESOURCE.activeReaders)++;
+
+                    //printStatus("\x1b[32;1mA: reader: %d: ready\x1b[0m\n", id);
+                    printStatus("reader: %d: ready\n", id);
+
+                    if(*(RESOURCE.activeReaders) == 1)
+                        sem_wait(RESOURCE.lockWrite);
+
+                sem_post(RESOURCE.lockActiveReaders);
+                //Unlock
+            sem_post(RESOURCE.lockRead);
+            //Unlock
+        sem_post(RESOURCE.lockAtomic);
+        //Unlock
+
+        //READING
+        //printStatus("\x1b[32;1mA: reader: %d: reads a value\x1b[0m\n", id);
+        printStatus("reader: %d: reads a value\n", id);
+        readed = *(RESOURCE.workSpace);
+        //printStatus("\x1b[32;1mA: reader: %d: read: %d\x1b[0m\n", id, readed);
+        printStatus("reader: %d: read: %d\n", id, readed);
+
+        interval = ((param.intervalReaders == 0)? 0 : (rand()%(param.intervalReaders + 1)));
+        usleep(interval * 1000);
+
+        //Lock
+        sem_wait(RESOURCE.lockActiveReaders);
+            (*RESOURCE.activeReaders)--;
+
+            if(*(RESOURCE.activeReaders) == 0)
+                sem_post(RESOURCE.lockWrite);
+
+        sem_post(RESOURCE.lockActiveReaders);
+        //Unlock
+
+        //Read 0 from share memmory.. exiting
+        if(readed == 0)
+            break;
+    }
+
+    //_exit(0);
+    //freeResources();
+    exit(0);
+
+}
+
+void programAbort(int signal){
+    signal++;
+
+    //Free all resources
+    freeResources();
+
+    //Kill parent if exists
+    kill(getppid(), SIGTERM);
+
+    printError(E_ABORT);
+    //Child _exit(1);
+    exit(1);
+}
+
+void printError(int errorCode){
+    fprintf(stderr, "%s\n", ERROR_MESSAGES[errorCode]);
+}
+
+void printStatus(char* format, ...){
+    //LOCK
+    sem_wait(RESOURCE.lockOutput);
+
+    if(RESOURCE.output){
+        va_list args;
+        va_start(args, format);
+
+        fprintf(RESOURCE.output, "%d: ", *(RESOURCE.actionCounter));
+
+        (*RESOURCE.actionCounter)++;
+        vfprintf(RESOURCE.output, format, args);
+        fflush(RESOURCE.output);
+        va_end(args);
+    }
+
+    //UNLOCK
+    sem_post(RESOURCE.lockOutput);
+}

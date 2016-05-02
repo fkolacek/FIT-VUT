@@ -1,0 +1,932 @@
++------------------------------- Statistics ------------------------------
+| Day 301 | 1. November 0:00 (night), model time: 7200
++------------------------------- Statistics ------------------------------
+| Honey in total: 18 kg, 18000 g (1.8e+07 mg )
+| Honey consumed in total: 0 kg, 0 g (0 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 3500
+| WORKER_FEEDER: 3500
+| WORKER_BUILDER: 3500
+| WORKER_GUARD: 3500
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 4000
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 18000
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.11.;18;0;0;0;0;0;3500;3500;3500;3500;0;0;4000;0;0;0;0;1;0;0;0;0;0;0;0;18000;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 316 | 16. November 0:00 (night), model time: 7560
++------------------------------- Statistics ------------------------------
+| Honey in total: 15.9109 kg, 15910.9 g (1.59109e+07 mg )
+| Honey consumed in total: 2.08914 kg, 2089.14 g (2.08914e+06 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 6924
+| WORKER_GUARD: 6900
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 3953
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 17777
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.11.;15.9109;2.08914;0;0;0;0;0;0;6924;6900;0;0;3953;0;0;0;0;1;0;0;0;0;0;0;0;17777;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 331 | 1. December 0:00 (night), model time: 7920
++------------------------------- Statistics ------------------------------
+| Honey in total: 13.7915 kg, 13791.5 g (1.37915e+07 mg )
+| Honey consumed in total: 4.2085 kg, 4208.5 g (4.2085e+06 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 10264
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 7306
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 17570
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.12.;13.7915;4.2085;0;0;0;0;0;0;0;10264;0;0;7306;0;0;0;0;1;0;0;0;0;0;0;0;17570;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 346 | 16. December 0:00 (night), model time: 8280
++------------------------------- Statistics ------------------------------
+| Honey in total: 11.6968 kg, 11696.8 g (1.16968e+07 mg )
+| Honey consumed in total: 6.30318 kg, 6303.18 g (6.30318e+06 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 17352
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 17352
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.12.;11.6968;6.30318;0;0;0;0;0;0;0;0;0;0;17352;0;0;0;0;1;0;0;0;0;0;0;0;17352;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 361 | 1. January 0:00 (night), model time: 8640
++------------------------------- Statistics ------------------------------
+| Honey in total: 9.6273 kg, 9627.3 g (9.6273e+06 mg )
+| Honey consumed in total: 8.3727 kg, 8372.7 g (8.3727e+06 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 17152
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 17152
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.1.;9.6273;8.3727;0;0;0;0;0;0;0;0;0;0;17152;0;0;0;0;1;0;0;0;0;0;0;0;17152;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 376 | 16. January 0:00 (night), model time: 9000
++------------------------------- Statistics ------------------------------
+| Honey in total: 7.58118 kg, 7581.18 g (7.58118e+06 mg )
+| Honey consumed in total: 10.4188 kg, 10418.8 g (1.04188e+07 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 16954
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 16954
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.1.;7.58118;10.4188;0;0;0;0;0;0;0;0;0;0;16954;0;0;0;0;1;0;0;0;0;0;0;0;16954;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 391 | 1. February 0:00 (night), model time: 9360
++------------------------------- Statistics ------------------------------
+| Honey in total: 5.55797 kg, 5557.97 g (5.55797e+06 mg )
+| Honey consumed in total: 12.442 kg, 12442 g (1.2442e+07 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 16776
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 16776
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.2.;5.55797;12.442;0;0;0;0;0;0;0;0;0;0;16776;0;0;0;0;1;0;0;0;0;0;0;0;16776;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 406 | 16. February 0:00 (night), model time: 9720
++------------------------------- Statistics ------------------------------
+| Honey in total: 3.82968 kg, 3829.68 g (3.82968e+06 mg )
+| Honey consumed in total: 14.1703 kg, 14170.3 g (1.41703e+07 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 14400
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 14400
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.2.;3.82968;14.1703;0;0;0;0;0;0;0;0;0;0;14400;0;0;0;0;1;0;0;0;0;0;0;0;14400;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 421 | 1. March 0:00 (night), model time: 10080
++------------------------------- Statistics ------------------------------
+| Honey in total: 2.10156 kg, 2101.56 g (2.10156e+06 mg )
+| Honey consumed in total: 15.8984 kg, 15898.4 g (1.58984e+07 mg )
+| Eggs in total: 0 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 14400
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 0
++------------------------------- Sums -----------------------------------
+| WORKERS: 14400
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.3.;2.10156;15.8984;0;0;0;0;0;0;0;0;0;0;14400;0;0;0;0;1;0;0;0;0;0;0;0;14400;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 436 | 16. March 0:00 (night), model time: 10440
++------------------------------- Statistics ------------------------------
+| Honey in total: 8.19349 kg, 8193.49 g (8.19349e+06 mg )
+| Honey consumed in total: 15.8984 kg, 15898.4 g (1.58984e+07 mg )
+| Eggs in total: 14770 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 3766
+| WORKER_MAGGOT: 7511
+| WORKER_CAWL: 2854
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 13681
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 171
+| DRONE_MAGGOT: 339
+| DRONE_CAWL: 129
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 719
++------------------------------- Sums -----------------------------------
+| WORKERS: 13681
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.3.;8.19349;15.8984;14770;3766;7511;2854;0;0;0;0;0;0;13681;0;0;0;0;1;0;171;339;129;0;0;719;13681;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 451 | 1. April 0:00 (night), model time: 10800
++------------------------------- Statistics ------------------------------
+| Honey in total: 13.7648 kg, 13764.8 g (1.37648e+07 mg )
+| Honey consumed in total: 16.0302 kg, 16030.2 g (1.60302e+07 mg )
+| Eggs in total: 29255 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 3815
+| WORKER_MAGGOT: 7254
+| WORKER_CAWL: 11312
+| WORKER_CLEANER: 1848
+| WORKER_FEEDER: 3762
+| WORKER_BUILDER: 0
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 12489
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 173
+| DRONE_MAGGOT: 324
+| DRONE_CAWL: 638
+| DRONE: 129
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 1417
++------------------------------- Sums -----------------------------------
+| WORKERS: 18099
+| DRONES: 129
++------------------------------- Parsable -----------------------------------
+CSV;1.4.;13.7648;16.0302;29255;3815;7254;11312;1848;3762;0;0;0;0;12489;0;0;0;0;1;0;173;324;638;129;0;1417;18099;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 466 | 16. April 0:00 (night), model time: 11160
++------------------------------- Statistics ------------------------------
+| Honey in total: 16.9144 kg, 16914.4 g (1.69144e+07 mg )
+| Honey consumed in total: 17.8456 kg, 17845.6 g (1.78456e+07 mg )
+| Eggs in total: 43938 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 3631
+| WORKER_MAGGOT: 7627
+| WORKER_CAWL: 11182
+| WORKER_CLEANER: 1724
+| WORKER_FEEDER: 7510
+| WORKER_BUILDER: 10365
+| WORKER_GUARD: 0
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 10253
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 163
+| DRONE_MAGGOT: 346
+| DRONE_CAWL: 623
+| DRONE: 429
+| DRONE_READY: 338
+| ACCIDENTALLY_KILLED: 2016
++------------------------------- Sums -----------------------------------
+| WORKERS: 29852
+| DRONES: 767
++------------------------------- Parsable -----------------------------------
+CSV;16.4.;16.9144;17.8456;43938;3631;7627;11182;1724;7510;10365;0;0;0;10253;0;0;0;0;1;0;163;346;623;429;338;2016;29852;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 481 | 1. May 0:00 (night), model time: 11520
++------------------------------- Statistics ------------------------------
+| Honey in total: 17.8532 kg, 17853.2 g (1.78532e+07 mg )
+| Honey consumed in total: 20.731 kg, 20731 g (2.0731e+07 mg )
+| Eggs in total: 58405 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 3725
+| WORKER_MAGGOT: 7325
+| WORKER_CAWL: 11031
+| WORKER_CLEANER: 2035
+| WORKER_FEEDER: 7602
+| WORKER_BUILDER: 10993
+| WORKER_GUARD: 13183
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 7587
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 164
+| DRONE_MAGGOT: 319
+| DRONE_CAWL: 638
+| DRONE: 423
+| DRONE_READY: 967
+| ACCIDENTALLY_KILLED: 2450
++------------------------------- Sums -----------------------------------
+| WORKERS: 41400
+| DRONES: 1390
++------------------------------- Parsable -----------------------------------
+CSV;1.5.;17.8532;20.731;58405;3725;7325;11031;2035;7602;10993;13183;0;0;7587;0;0;0;0;1;0;164;319;638;423;967;2450;41400;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 496 | 16. May 0:00 (night), model time: 11880
++------------------------------- Statistics ------------------------------
+| Honey in total: 18.1696 kg, 18169.6 g (1.81696e+07 mg )
+| Honey consumed in total: 24.4327 kg, 24432.7 g (2.44327e+07 mg )
+| Eggs in total: 72925 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 3505
+| WORKER_MAGGOT: 7383
+| WORKER_CAWL: 11302
+| WORKER_CLEANER: 1817
+| WORKER_FEEDER: 7364
+| WORKER_BUILDER: 11327
+| WORKER_GUARD: 17725
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 8994
+| WORKER_OUT_WINTER: 4406
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 158
+| DRONE_MAGGOT: 342
+| DRONE_CAWL: 618
+| DRONE: 422
+| DRONE_READY: 967
+| ACCIDENTALLY_KILLED: 2910
++------------------------------- Sums -----------------------------------
+| WORKERS: 51633
+| DRONES: 1389
++------------------------------- Parsable -----------------------------------
+CSV;16.5.;18.1696;24.4327;72925;3505;7383;11302;1817;7364;11327;17725;0;8994;4406;0;0;0;0;1;0;158;342;618;422;967;2910;51633;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 511 | 1. June 0:00 (night), model time: 12240
++------------------------------- Statistics ------------------------------
+| Honey in total: 21.1071 kg, 21107.1 g (2.11071e+07 mg )
+| Honey consumed in total: 28.1523 kg, 28152.3 g (2.81523e+07 mg )
+| Eggs in total: 87142 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 3681
+| WORKER_MAGGOT: 7202
+| WORKER_CAWL: 10734
+| WORKER_CLEANER: 1909
+| WORKER_FEEDER: 7689
+| WORKER_BUILDER: 10998
+| WORKER_GUARD: 17929
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 13035
+| WORKER_OUT_WINTER: 2004
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 167
+| DRONE_MAGGOT: 322
+| DRONE_CAWL: 623
+| DRONE: 416
+| DRONE_READY: 966
+| ACCIDENTALLY_KILLED: 3698
++------------------------------- Sums -----------------------------------
+| WORKERS: 53564
+| DRONES: 1382
++------------------------------- Parsable -----------------------------------
+CSV;1.6.;21.1071;28.1523;87142;3681;7202;10734;1909;7689;10998;17929;0;13035;2004;0;0;0;0;1;0;167;322;623;416;966;3698;53564;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 526 | 16. June 0:00 (night), model time: 12600
++------------------------------- Statistics ------------------------------
+| Honey in total: 23.9993 kg, 23999.3 g (2.39993e+07 mg )
+| Honey consumed in total: 31.8698 kg, 31869.8 g (3.18698e+07 mg )
+| Eggs in total: 105417 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 4609
+| WORKER_MAGGOT: 9325
+| WORKER_CAWL: 11725
+| WORKER_CLEANER: 1716
+| WORKER_FEEDER: 7201
+| WORKER_BUILDER: 11335
+| WORKER_GUARD: 17524
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 13262
+| WORKER_OUT_WINTER: 693
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 212
+| DRONE_MAGGOT: 433
+| DRONE_CAWL: 653
+| DRONE: 408
+| DRONE_READY: 962
+| ACCIDENTALLY_KILLED: 4427
++------------------------------- Sums -----------------------------------
+| WORKERS: 51731
+| DRONES: 1370
++------------------------------- Parsable -----------------------------------
+CSV;16.6.;23.9993;31.8698;105417;4609;9325;11725;1716;7201;11335;17524;0;13262;693;0;0;0;0;1;0;212;433;653;408;962;4427;51731;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 541 | 1. July 0:00 (night), model time: 12960
++------------------------------- Statistics ------------------------------
+| Honey in total: 26.5239 kg, 26523.9 g (2.65239e+07 mg )
+| Honey consumed in total: 35.5717 kg, 35571.7 g (3.55717e+07 mg )
+| Eggs in total: 123437 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 4555
+| WORKER_MAGGOT: 9191
+| WORKER_CAWL: 14135
+| WORKER_CLEANER: 2225
+| WORKER_FEEDER: 8256
+| WORKER_BUILDER: 10766
+| WORKER_GUARD: 17655
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 13055
+| WORKER_OUT_WINTER: 36
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 210
+| DRONE_MAGGOT: 434
+| DRONE_CAWL: 806
+| DRONE: 447
+| DRONE_READY: 964
+| ACCIDENTALLY_KILLED: 5095
++------------------------------- Sums -----------------------------------
+| WORKERS: 51993
+| DRONES: 1411
++------------------------------- Parsable -----------------------------------
+CSV;1.7.;26.5239;35.5717;123437;4555;9191;14135;2225;8256;10766;17655;0;13055;36;0;0;0;0;1;0;210;434;806;447;964;5095;51993;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 556 | 16. July 0:00 (night), model time: 13320
++------------------------------- Statistics ------------------------------
+| Honey in total: 28.4634 kg, 28463.4 g (2.84634e+07 mg )
+| Honey consumed in total: 39.7026 kg, 39702.6 g (3.97026e+07 mg )
+| Eggs in total: 142553 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 5093
+| WORKER_MAGGOT: 9549
+| WORKER_CAWL: 13951
+| WORKER_CLEANER: 2143
+| WORKER_FEEDER: 9276
+| WORKER_BUILDER: 13794
+| WORKER_GUARD: 17136
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 13147
+| WORKER_OUT_WINTER: 0
+| MOTHER_EGG: 17
+| MOTHER_MAGGOT: 22
+| MOTHER_CAWL: 20
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 245
+| DRONE_MAGGOT: 456
+| DRONE_CAWL: 812
+| DRONE: 539
+| DRONE_READY: 1043
+| ACCIDENTALLY_KILLED: 5763
++------------------------------- Sums -----------------------------------
+| WORKERS: 55496
+| DRONES: 1582
++------------------------------- Parsable -----------------------------------
+CSV;16.7.;28.4634;39.7026;142553;5093;9549;13951;2143;9276;13794;17136;0;13147;0;17;22;20;0;1;0;245;456;812;539;1043;5763;55496;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 571 | 1. August 0:00 (night), model time: 13680
++------------------------------- Statistics ------------------------------
+| Honey in total: 28.9824 kg, 28982.4 g (2.89824e+07 mg )
+| Honey consumed in total: 42.0254 kg, 42025.4 g (4.20254e+07 mg )
+| Eggs in total: 145912 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 0
+| WORKER_MAGGOT: 0
+| WORKER_CAWL: 14136
+| WORKER_CLEANER: 1186
+| WORKER_FEEDER: 1295
+| WORKER_BUILDER: 2253
+| WORKER_GUARD: 4494
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 1677
+| WORKER_OUT_WINTER: 0
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 23
+| MOTHER_WEDDING: 1
+| MOTHER: 0
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 850
+| DRONE: 549
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6059
++------------------------------- Sums -----------------------------------
+| WORKERS: 10905
+| DRONES: 549
++------------------------------- Parsable -----------------------------------
+CSV;1.8.;28.9824;42.0254;145912;0;0;14136;1186;1295;2253;4494;0;1677;0;0;0;23;1;0;0;0;0;850;549;0;6059;10905;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 586 | 16. August 0:00 (night), model time: 14040
++------------------------------- Statistics ------------------------------
+| Honey in total: 28.7846 kg, 28784.6 g (2.87846e+07 mg )
+| Honey consumed in total: 42.4828 kg, 42482.8 g (4.24828e+07 mg )
+| Eggs in total: 149617 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 2362
+| WORKER_MAGGOT: 1195
+| WORKER_CAWL: 0
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 4349
+| WORKER_BUILDER: 17
+| WORKER_GUARD: 1126
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 382
+| WORKER_OUT_WINTER: 0
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6078
++------------------------------- Sums -----------------------------------
+| WORKERS: 5874
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.8.;28.7846;42.4828;149617;2362;1195;0;0;4349;17;1126;0;382;0;0;0;0;0;1;0;0;0;0;0;0;6078;5874;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 601 | 1. September 0:00 (night), model time: 14400
++------------------------------- Statistics ------------------------------
+| Honey in total: 28.2672 kg, 28267.2 g (2.82672e+07 mg )
+| Honey consumed in total: 43.0701 kg, 43070.1 g (4.30701e+07 mg )
+| Eggs in total: 158849 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 2441
+| WORKER_MAGGOT: 4820
+| WORKER_CAWL: 5168
+| WORKER_CLEANER: 0
+| WORKER_FEEDER: 0
+| WORKER_BUILDER: 4338
+| WORKER_GUARD: 1154
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 0
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6084
++------------------------------- Sums -----------------------------------
+| WORKERS: 5492
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.9.;28.2672;43.0701;158849;2441;4820;5168;0;0;4338;1154;0;0;0;0;0;0;0;1;0;0;0;0;0;0;6084;5492;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 616 | 16. September 0:00 (night), model time: 14760
++------------------------------- Statistics ------------------------------
+| Honey in total: 27.8483 kg, 27848.3 g (2.78483e+07 mg )
+| Honey consumed in total: 43.8481 kg, 43848.1 g (4.38481e+07 mg )
+| Eggs in total: 168168 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 2397
+| WORKER_MAGGOT: 4758
+| WORKER_CAWL: 7236
+| WORKER_CLEANER: 1155
+| WORKER_FEEDER: 4642
+| WORKER_BUILDER: 1195
+| WORKER_GUARD: 4349
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 774
+| WORKER_OUT_WINTER: 0
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6135
++------------------------------- Sums -----------------------------------
+| WORKERS: 12115
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.9.;27.8483;43.8481;168168;2397;4758;7236;1155;4642;1195;4349;0;774;0;0;0;0;0;1;0;0;0;0;0;0;6135;12115;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 631 | 1. October 0:00 (night), model time: 15120
++------------------------------- Statistics ------------------------------
+| Honey in total: 27.5477 kg, 27547.7 g (2.75477e+07 mg )
+| Honey consumed in total: 45.4095 kg, 45409.5 g (4.54095e+07 mg )
+| Eggs in total: 177867 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 2340
+| WORKER_MAGGOT: 5042
+| WORKER_CAWL: 7245
+| WORKER_CLEANER: 1265
+| WORKER_FEEDER: 4820
+| WORKER_BUILDER: 7022
+| WORKER_GUARD: 2966
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 3752
+| WORKER_OUT_WINTER: 0
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6275
++------------------------------- Sums -----------------------------------
+| WORKERS: 19825
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.10.;27.5477;45.4095;177867;2340;5042;7245;1265;4820;7022;2966;0;3752;0;0;0;0;0;1;0;0;0;0;0;0;6275;19825;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 646 | 16. October 0:00 (night), model time: 15480
++------------------------------- Statistics ------------------------------
+| Honey in total: 26.0759 kg, 26075.9 g (2.60759e+07 mg )
+| Honey consumed in total: 47.5268 kg, 47526.8 g (4.75268e+07 mg )
+| Eggs in total: 187271 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 2397
+| WORKER_MAGGOT: 4850
+| WORKER_CAWL: 7349
+| WORKER_CLEANER: 1252
+| WORKER_FEEDER: 4905
+| WORKER_BUILDER: 7149
+| WORKER_GUARD: 11196
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 636
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6351
++------------------------------- Sums -----------------------------------
+| WORKERS: 25138
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;16.10.;26.0759;47.5268;187271;2397;4850;7349;1252;4905;7149;11196;0;0;636;0;0;0;0;1;0;0;0;0;0;0;6351;25138;
++------------------------------- End ---------------------------------------
+
+
++------------------------------- Statistics ------------------------------
+| Day 661 | 1. November 0:00 (night), model time: 15840
++------------------------------- Statistics ------------------------------
+| Honey in total: 25.8727 kg, 25872.7 g (2.58727e+07 mg )
+| Honey consumed in total: 49.9713 kg, 49971.3 g (4.99713e+07 mg )
+| Eggs in total: 196713 pcs
++------------------------------- Counts -----------------------------------
+| WORKER_EGG: 2451
+| WORKER_MAGGOT: 4887
+| WORKER_CAWL: 7276
+| WORKER_CLEANER: 1096
+| WORKER_FEEDER: 4737
+| WORKER_BUILDER: 7555
+| WORKER_GUARD: 11357
+| WORKER_OUT: 0
+| WORKER_OUT_SUMMER: 0
+| WORKER_OUT_WINTER: 9160
+| MOTHER_EGG: 0
+| MOTHER_MAGGOT: 0
+| MOTHER_CAWL: 0
+| MOTHER_WEDDING: 0
+| MOTHER: 1
+| MOTHER_VIRGIN: 0
+| DRONE_EGG: 0
+| DRONE_MAGGOT: 0
+| DRONE_CAWL: 0
+| DRONE: 0
+| DRONE_READY: 0
+| ACCIDENTALLY_KILLED: 6634
++------------------------------- Sums -----------------------------------
+| WORKERS: 33905
+| DRONES: 0
++------------------------------- Parsable -----------------------------------
+CSV;1.11.;25.8727;49.9713;196713;2451;4887;7276;1096;4737;7555;11357;0;0;9160;0;0;0;0;1;0;0;0;0;0;0;6634;33905;
++------------------------------- End ---------------------------------------
+
+
+#
+# SIMLIB run-time statistics:
+#    StartTime  = 7200
+#    EndTime    = 15840
+#    EventCount = 209639958
+#    StepCount  = 0
+#

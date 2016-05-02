@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<tables>
+	<table name="room">
+		<relation relation_type="1:1" to="room"/>
+		<relation relation_type="N:1" to="description"/>
+		<relation relation_type="N:1" to="title"/>
+		<relation relation_type="N:1" to="price"/>
+		<relation relation_type="N:1" to="author"/>
+		<relation relation_type="N:1" to="publish_date"/>
+		<relation relation_type="N:1" to="genre"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="N:M" to="room"/>
+		<relation relation_type="N:M" to="room"/>
+		<relation relation_type="N:M" to="book"/>
+	</table>
+	<table name="title">
+		<relation relation_type="1:1" to="title"/>
+		<relation relation_type="1:N" to="room"/>
+		<relation relation_type="1:N" to="book"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="N:M" to="description"/>
+		<relation relation_type="N:M" to="price"/>
+		<relation relation_type="N:M" to="author"/>
+		<relation relation_type="N:M" to="publish_date"/>
+		<relation relation_type="N:M" to="genre"/>
+	</table>
+	<table name="price">
+		<relation relation_type="1:1" to="price"/>
+		<relation relation_type="1:N" to="room"/>
+		<relation relation_type="1:N" to="book"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="N:M" to="title"/>
+		<relation relation_type="N:M" to="description"/>
+		<relation relation_type="N:M" to="author"/>
+		<relation relation_type="N:M" to="publish_date"/>
+		<relation relation_type="N:M" to="genre"/>
+	</table>
+	<table name="author">
+		<relation relation_type="1:1" to="author"/>
+		<relation relation_type="1:N" to="room"/>
+		<relation relation_type="1:N" to="book"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="N:M" to="title"/>
+		<relation relation_type="N:M" to="price"/>
+		<relation relation_type="N:M" to="description"/>
+		<relation relation_type="N:M" to="publish_date"/>
+		<relation relation_type="N:M" to="genre"/>
+	</table>
+	<table name="library">
+		<relation relation_type="1:1" to="library"/>
+		<relation relation_type="N:1" to="room"/>
+		<relation relation_type="N:1" to="book"/>
+		<relation relation_type="N:1" to="description"/>
+		<relation relation_type="N:1" to="title"/>
+		<relation relation_type="N:1" to="price"/>
+		<relation relation_type="N:1" to="author"/>
+		<relation relation_type="N:1" to="publish_date"/>
+		<relation relation_type="N:1" to="genre"/>
+	</table>
+	<table name="book">
+		<relation relation_type="1:1" to="book"/>
+		<relation relation_type="N:1" to="description"/>
+		<relation relation_type="N:1" to="title"/>
+		<relation relation_type="N:1" to="price"/>
+		<relation relation_type="N:1" to="author"/>
+		<relation relation_type="N:1" to="publish_date"/>
+		<relation relation_type="N:1" to="genre"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="N:M" to="room"/>
+		<relation relation_type="N:M" to="book"/>
+		<relation relation_type="N:M" to="book"/>
+	</table>
+	<table name="publish_date">
+		<relation relation_type="1:1" to="publish_date"/>
+		<relation relation_type="1:N" to="room"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="1:N" to="book"/>
+		<relation relation_type="N:M" to="title"/>
+		<relation relation_type="N:M" to="price"/>
+		<relation relation_type="N:M" to="author"/>
+		<relation relation_type="N:M" to="description"/>
+		<relation relation_type="N:M" to="genre"/>
+	</table>
+	<table name="genre">
+		<relation relation_type="1:1" to="genre"/>
+		<relation relation_type="1:N" to="room"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="1:N" to="book"/>
+		<relation relation_type="N:M" to="title"/>
+		<relation relation_type="N:M" to="price"/>
+		<relation relation_type="N:M" to="author"/>
+		<relation relation_type="N:M" to="publish_date"/>
+		<relation relation_type="N:M" to="description"/>
+	</table>
+	<table name="description">
+		<relation relation_type="1:1" to="description"/>
+		<relation relation_type="1:N" to="room"/>
+		<relation relation_type="1:N" to="library"/>
+		<relation relation_type="1:N" to="book"/>
+		<relation relation_type="N:M" to="title"/>
+		<relation relation_type="N:M" to="price"/>
+		<relation relation_type="N:M" to="author"/>
+		<relation relation_type="N:M" to="publish_date"/>
+		<relation relation_type="N:M" to="genre"/>
+	</table>
+</tables>

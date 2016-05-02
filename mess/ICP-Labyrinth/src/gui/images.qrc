@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gfx/disconnect.png</file>
+        <file>gfx/save.png</file>
+        <file>gfx/invite.png</file>
+        <file>gfx/about.png</file>
+        <file>gfx/new.png</file>
+        <file>gfx/load.png</file>
+        <file>gfx/stone_i_down.png</file>
+        <file>gfx/stone_i_left.png</file>
+        <file>gfx/stone_i_right.png</file>
+        <file>gfx/stone_i_up.png</file>
+        <file>gfx/stone_l_down.png</file>
+        <file>gfx/stone_l_left.png</file>
+        <file>gfx/stone_l_right.png</file>
+        <file>gfx/stone_l_up.png</file>
+        <file>gfx/stone_none.png</file>
+        <file>gfx/stone_t_down.png</file>
+        <file>gfx/stone_t_left.png</file>
+        <file>gfx/stone_t_right.png</file>
+        <file>gfx/stone_t_up.png</file>
+        <file>gfx/connect.png</file>
+        <file>gfx/cross.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1324240282 source:/var/www/froggy/git/proj4/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<locale.h>
+	<string.h>
+	"proj4listUtils.h"
+
+1324240071 /var/www/froggy/git/proj4/proj4listUtils.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<stdbool.h>
+	<wchar.h>
+	<errno.h>
+
+1324237639 source:/var/www/froggy/git/proj4/proj4listUtils.c
+	"proj4listUtils.h"
+

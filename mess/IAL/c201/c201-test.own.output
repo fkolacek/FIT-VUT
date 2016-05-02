@@ -1,0 +1,122 @@
+Jednosmìrnì vázaný lineární seznam
+==================================
+
+[TEST01]
+Inicializace seznamu
+~~~~~~~~~~~~~~~~~~~~
+Operace InitList nebyla implementovana 
+
+[TEST02]
+Pokus o volání CopyFirst nad prázdným seznamem => chyba
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace CopyFirst nebyla implementována!
+
+[TEST03]
+Zavoláme 4x operaci InsertFirst.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace InsertFirst nebyla implementována!
+Operace InsertFirst nebyla implementována!
+Operace InsertFirst nebyla implementována!
+Operace InsertFirst nebyla implementována!
+
+[TEST04]
+Seznam je neaktivní -- ovìøíme si to voláním funce Active.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace Active nebyla implementována!
+
+[TEST05]
+Otestujeme funkci First pøi neaktivním seznamu a funkci Active.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace First nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST06]
+Test funkce Copy pøi aktivitì na prvním prvku
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace Copy nebyla implementována!
+
+[TEST07]
+Test funkce Succ -- voláme 3x, aktivita bude na posledním prvku.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace Succ nebyla implementována!
+Operace Succ nebyla implementována!
+Operace Succ nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST08]
+Aktualizujeme obsah aktivního prvku.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace Actualize nebyla implementována!
+Operace Active nebyla implementována!
+Operace Copy nebyla implementována!
+
+[TEST09]
+Provedeme je¹tì jednou Succ -- aktivita se ztratí.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace Succ nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST10]
+Operace First nastaví aktivitu na první prvek.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace First nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST11]
+DeleteFirst aktivního prvku povede ke ztrátì aktivity.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace DeleteFirst() nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST12]
+U¾itím operací First a Succ nastavíme aktivitu na konec seznamu.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace First nebyla implementována!
+Operace Succ nebyla implementována!
+Operace Succ nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST13]
+Operace PostDelete pøi aktivitì na posledním prvku nedìlá nic.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace PostDelete() nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST14]
+Nastavíme aktivitu na zaèátek a dvakrát zavoláme PostDelete.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace First nebyla implementována!
+Operace Active nebyla implementována!
+Operace PostDelete() nebyla implementována!
+Operace PostDelete() nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST15]
+Otestujeme InsertFirst pøi seznamu s jediným prvkem, nastavíme
+aktivitu na novì vlo¾ený prvek a opìt posuneme aktivitu na konec
+seznamu.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace InsertFirst nebyla implementována!
+Operace First nebyla implementována!
+Operace Succ nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST16]
+Operací PostInsert vlo¾íme nový prvek za poslední prvek seznamu.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace PostInsert nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST17]
+Nastavíme aktivitu na první prvek seznamu a vyzkou¹íme PostInsert.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace First nebyla implementována!
+Operace PostInsert nebyla implementována!
+Operace Active nebyla implementována!
+
+[TEST18]
+Otestujeme funkènost operace DisposeList.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Operace DisposeList() nebyla implementována!
+
+----------------------- konec pøíkladu c201 -------------------------
